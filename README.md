@@ -1,2 +1,4 @@
 #biograhy
 # biography
+# biograpgy
+# biography

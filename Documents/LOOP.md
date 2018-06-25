@@ -1,0 +1,7 @@
+<!DocType html>
+<html>
+<body>
+<script src="scripts/main.js"></script>
+</body>
+
+</html>

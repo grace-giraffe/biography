@@ -1,0 +1,22 @@
+[2018-06-25 10:48:29.253] [exthost7] [info] extension host started
+[2018-06-25 10:48:29.282] [exthost7] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2018-06-25 10:48:29.282] [exthost7] [info] ExtensionService#loadCommonJSModule /private/var/folders/x_/vdt6428d6cj852j3gycm176m0000gn/T/AppTranslocation/5AA1BCEA-8AA9-4CB9-B02E-7BB7949550D6/d/Visual Studio Code.app/Contents/Resources/app/extensions/emmet/out/extension
+[2018-06-25 10:48:29.335] [exthost7] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2018-06-25 10:48:29.335] [exthost7] [info] ExtensionService#loadCommonJSModule /private/var/folders/x_/vdt6428d6cj852j3gycm176m0000gn/T/AppTranslocation/5AA1BCEA-8AA9-4CB9-B02E-7BB7949550D6/d/Visual Studio Code.app/Contents/Resources/app/extensions/git/out/main
+[2018-06-25 10:48:29.490] [exthost7] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2018-06-25 10:48:29.490] [exthost7] [info] ExtensionService#loadCommonJSModule /private/var/folders/x_/vdt6428d6cj852j3gycm176m0000gn/T/AppTranslocation/5AA1BCEA-8AA9-4CB9-B02E-7BB7949550D6/d/Visual Studio Code.app/Contents/Resources/app/extensions/merge-conflict/out/extension
+[2018-06-25 10:48:29.517] [exthost7] [info] ExtensionService#_doActivateExtension vscode.search-rg {"startup":true,"activationEvent":"*"}
+[2018-06-25 10:48:29.517] [exthost7] [info] ExtensionService#loadCommonJSModule /private/var/folders/x_/vdt6428d6cj852j3gycm176m0000gn/T/AppTranslocation/5AA1BCEA-8AA9-4CB9-B02E-7BB7949550D6/d/Visual Studio Code.app/Contents/Resources/app/extensions/search-rg/out/extension
+[2018-06-25 10:48:29.523] [exthost7] [info] ExtensionService#_doActivateExtension formulahendry.auto-close-tag {"startup":true,"activationEvent":"*"}
+[2018-06-25 10:48:29.523] [exthost7] [info] ExtensionService#loadCommonJSModule /Users/nextechcatapult/.vscode/extensions/formulahendry.auto-close-tag-0.5.6/out/src/extension
+[2018-06-25 10:48:29.524] [exthost7] [info] ExtensionService#_doActivateExtension formulahendry.auto-rename-tag {"startup":true,"activationEvent":"*"}
+[2018-06-25 10:48:29.524] [exthost7] [info] ExtensionService#loadCommonJSModule /Users/nextechcatapult/.vscode/extensions/formulahendry.auto-rename-tag-0.0.15/out/src/extension
+[2018-06-25 10:48:29.526] [exthost7] [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer {"startup":true,"activationEvent":"*"}
+[2018-06-25 10:48:29.526] [exthost7] [info] ExtensionService#loadCommonJSModule /Users/nextechcatapult/.vscode/extensions/ritwickdey.liveserver-5.1.1/out/src/extension
+[2018-06-25 10:48:29.839] [exthost7] [info] ExtensionService#_doActivateExtension Zignd.html-css-class-completion {"startup":true,"activationEvent":"*"}
+[2018-06-25 10:48:29.839] [exthost7] [info] ExtensionService#loadCommonJSModule /Users/nextechcatapult/.vscode/extensions/zignd.html-css-class-completion-1.17.1/out/src/extension
+[2018-06-25 10:48:30.173] [exthost7] [info] eager extensions activated
+[2018-06-25 10:51:44.044] [exthost7] [info] ExtensionService#_doActivateExtension vscode.extension-editing {"startup":false,"activationEvent":"onLanguage:markdown"}
+[2018-06-25 10:51:44.044] [exthost7] [info] ExtensionService#loadCommonJSModule /private/var/folders/x_/vdt6428d6cj852j3gycm176m0000gn/T/AppTranslocation/5AA1BCEA-8AA9-4CB9-B02E-7BB7949550D6/d/Visual Studio Code.app/Contents/Resources/app/extensions/extension-editing/out/extension
+[2018-06-25 10:51:44.059] [exthost7] [info] ExtensionService#_doActivateExtension vscode.markdown-language-features {"startup":false,"activationEvent":"onLanguage:markdown"}
+[2018-06-25 10:51:44.059] [exthost7] [info] ExtensionService#loadCommonJSModule /private/var/folders/x_/vdt6428d6cj852j3gycm176m0000gn/T/AppTranslocation/5AA1BCEA-8AA9-4CB9-B02E-7BB7949550D6/d/Visual Studio Code.app/Contents/Resources/app/extensions/markdown-language-features/out/extension

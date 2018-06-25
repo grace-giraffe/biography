@@ -467,10 +467,10 @@
     "pickerWorkingDir": "/Users/nextechcatapult/Documents",
     "openedPathsList": {
         "workspaces": [
-            "/Users/nextechcatapult/Documents/image-editing-exercise",
-            "/Users/nextechcatapult/Documents/image-thumbnail-exercise",
-            "/Users/nextechcatapult/Documents/biography",
             "/Users/nextechcatapult/Documents/click-handler",
+            "/Users/nextechcatapult/Documents/image-thumbnail-exercise",
+            "/Users/nextechcatapult/Documents/image-editing-exercise",
+            "/Users/nextechcatapult/Documents/biography",
             "/Users/nextechcatapult/scripts",
             "/Users/nextechcatapult/Documents/restaurantmenu",
             "/Users/nextechcatapult/Documents/image-practice",
@@ -478,6 +478,9 @@
             "/Users/nextechcatapult/restrauntmenu",
             "/Users/nextechcatapult/biography/restrauntmenu"
         ],
-        "files": []
+        "files": [
+            "/Users/nextechcatapult/Documents/LOOP.md",
+            "/Users/nextechcatapult/Documents/README.md"
+        ]
     }
 }

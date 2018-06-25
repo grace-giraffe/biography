@@ -371,3 +371,26 @@ cd loops
 git remote add origin https://github.com/grace-giraffe/loops.git
 git init
 git commit -m "first commit'
+git init
+git commit -m "first commit"
+git remote add origin "https://github.com/grace-giraffe/loops.git"
+git push -u origin master
+ls
+cd loops
+git status
+git add .
+git status
+git commit -m "first commit"
+ls
+ls loop
+cd documents
+ls
+echo "# loop" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/grace-giraffe/loop.git
+git push -u master
+git push -u origin master
+lw
+ls

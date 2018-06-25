@@ -63,6 +63,8 @@
         <string>https://gsa.apple.com/account/devices/self</string>
         <key>securityUpgradeLearnMore</key>
         <string>https://gsa.apple.com/appleid/account/security/upgrade/learnmore</string>
+        <key>changePhoneNumber</key>
+        <string>https://gsa.apple.com/appleid/account/manage/repair/verify/phone/swap/change</string>
         <key>stingrayDisable</key>
         <string>https://gsa.apple.com/appleid/account/manage/security/stingray/disable</string>
         <key>validateCode</key>

@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>OSBuild</key>
-	<string>10.13.3:17D47</string>
+	<string>10.13.5:17F77</string>
 	<key>appRecords</key>
 	<array>
 		<array>
 			<string>AppRecord</string>
-			<string>com.apple.ncplugin.weather</string>
-			<string>com.apple.ncplugin.weather</string>
-			<string>51</string>
-			<string>1.0</string>
-			<integer>165</integer>
+			<string>SiriNCService</string>
+			<string>com.apple.SiriNCService</string>
+			<string>146.4.5.1</string>
+			<string>146.4.5.1</string>
+			<integer>56673</integer>
 			<integer>0</integer>
-			<integer>12</integer>
+			<integer>2</integer>
 			<integer>0</integer>
 			<integer>0</integer>
 			<integer>0</integer>
@@ -23,15 +23,15 @@
 		</array>
 		<array>
 			<string>AppRecord</string>
-			<string>WiFiAgent</string>
-			<string>com.apple.wifi.WiFiAgent</string>
-			<string>1345</string>
-			<string>13.0</string>
-			<integer>214280</integer>
+			<string>App Store</string>
+			<string>com.apple.appstore</string>
+			<string>657</string>
+			<string>2.4</string>
+			<integer>56736</integer>
 			<integer>0</integer>
 			<integer>1</integer>
 			<integer>0</integer>
-			<integer>0</integer>
+			<integer>1</integer>
 			<integer>0</integer>
 			<integer>0</integer>
 			<integer>0</integer>
@@ -42,22 +42,7 @@
 			<string>com.apple.systemuiserver</string>
 			<string>462</string>
 			<string>1.7</string>
-			<integer>214275</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string>storeuid</string>
-			<string>com.apple.storeuid</string>
-			<string>654.8</string>
-			<string>1.0</string>
-			<integer>92060</integer>
+			<integer>56738</integer>
 			<integer>0</integer>
 			<integer>1</integer>
 			<integer>0</integer>
@@ -68,73 +53,13 @@
 		</array>
 		<array>
 			<string>AppRecord</string>
-			<string>com.apple.speech.speechsynthesisd</string>
-			<string></string>
-			<string></string>
-			<string></string>
-			<integer>141568</integer>
-			<integer>0</integer>
-			<integer>1</integer>
+			<string>WiFiAgent</string>
+			<string>com.apple.wifi.WiFiAgent</string>
+			<string>1361.7</string>
+			<string>13.0</string>
+			<integer>57115</integer>
 			<integer>0</integer>
 			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string>Siri</string>
-			<string>com.apple.Siri</string>
-			<string>146.2.3.1</string>
-			<string>146.2.3.1</string>
-			<integer>214275</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string>com.apple.AddressBook.ABPersonViewService</string>
-			<string>com.apple.AddressBook.ABPersonViewService</string>
-			<string>1808.6</string>
-			<string>11.0</string>
-			<integer>141520</integer>
-			<integer>0</integer>
-			<integer>2</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string>com.apple.preference.network.remoteservice</string>
-			<string>com.apple.preference.network.remoteservice</string>
-			<string>1.0</string>
-			<string>1.0</string>
-			<integer>84</integer>
-			<integer>0</integer>
-			<integer>2</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string></string>
-			<string></string>
-			<string></string>
-			<string></string>
-			<integer>91941</integer>
-			<integer>0</integer>
-			<integer>5</integer>
 			<integer>0</integer>
 			<integer>0</integer>
 			<integer>0</integer>
@@ -147,7 +72,7 @@
 			<string>com.apple.nbagent</string>
 			<string>1</string>
 			<string>1.0</string>
-			<integer>214275</integer>
+			<integer>57115</integer>
 			<integer>0</integer>
 			<integer>0</integer>
 			<integer>0</integer>
@@ -158,13 +83,13 @@
 		</array>
 		<array>
 			<string>AppRecord</string>
-			<string>com.apple.WebKit.WebContent</string>
-			<string>com.apple.WebKit.WebContent</string>
-			<string>13604.5.6</string>
-			<string>13604</string>
-			<integer>106050</integer>
+			<string>com.apple.iCal.CalendarNC</string>
+			<string>com.apple.iCal.CalendarNC</string>
+			<string>2195.4.3</string>
+			<string>1.0</string>
+			<integer>13</integer>
 			<integer>0</integer>
-			<integer>381</integer>
+			<integer>0</integer>
 			<integer>0</integer>
 			<integer>0</integer>
 			<integer>0</integer>
@@ -175,41 +100,11 @@
 			<string>AppRecord</string>
 			<string>Spotlight</string>
 			<string>com.apple.Spotlight</string>
-			<string>1191.2.6</string>
+			<string>1191.4.13</string>
 			<string>1.0</string>
-			<integer>214275</integer>
+			<integer>56736</integer>
 			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string>Safari</string>
-			<string>com.apple.Safari</string>
-			<string>13604.5.6</string>
-			<string>11.0.3</string>
-			<integer>214215</integer>
-			<integer>98856</integer>
 			<integer>1</integer>
-			<integer>133</integer>
-			<integer>1</integer>
-			<integer>301</integer>
-			<integer>269</integer>
-			<integer>112632</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string>SpeechDataInstallerd</string>
-			<string>com.apple.speech.SpeechDataInstallerd</string>
-			<string>7.3.1</string>
-			<string>7.3.1</string>
-			<integer>395</integer>
-			<integer>0</integer>
-			<integer>4</integer>
 			<integer>0</integer>
 			<integer>0</integer>
 			<integer>0</integer>
@@ -218,26 +113,11 @@
 		</array>
 		<array>
 			<string>AppRecord</string>
-			<string></string>
-			<string>com.apple.WebKit.WebContent</string>
-			<string>13604.5.6</string>
-			<string>13604</string>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>2</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string>DiskImages UI Agent</string>
-			<string>com.apple.frameworks.diskimages.diuiagent</string>
-			<string>480.30.2</string>
-			<string>480.30.2</string>
-			<integer>12</integer>
+			<string>Dock</string>
+			<string>com.apple.dock</string>
+			<string>1849.16</string>
+			<string>1.8</string>
+			<integer>56738</integer>
 			<integer>0</integer>
 			<integer>1</integer>
 			<integer>0</integer>
@@ -252,7 +132,7 @@
 			<string>com.apple.notificationcenterui</string>
 			<string>639.10</string>
 			<string>1.0</string>
-			<integer>214275</integer>
+			<integer>57115</integer>
 			<integer>0</integer>
 			<integer>0</integer>
 			<integer>0</integer>
@@ -263,26 +143,26 @@
 		</array>
 		<array>
 			<string>AppRecord</string>
-			<string>Dock</string>
-			<string>com.apple.dock</string>
-			<string>1849.10</string>
-			<string>1.8</string>
-			<integer>214275</integer>
-			<integer>7</integer>
+			<string>com.apple.WebKit.WebContent</string>
+			<string>com.apple.WebKit.WebContent</string>
+			<string>13605.2.8</string>
+			<string>13605</string>
+			<integer>868</integer>
+			<integer>0</integer>
+			<integer>8</integer>
 			<integer>0</integer>
 			<integer>0</integer>
 			<integer>0</integer>
-			<integer>1</integer>
-			<integer>1</integer>
-			<integer>307</integer>
+			<integer>0</integer>
+			<integer>0</integer>
 		</array>
 		<array>
 			<string>AppRecord</string>
-			<string>com.apple.dock.ecti</string>
-			<string>com.apple.dock.ecti</string>
-			<string>1</string>
-			<string>1.0</string>
-			<integer>26</integer>
+			<string>LookupViewService</string>
+			<string>com.apple.LookupViewService</string>
+			<string>239.1</string>
+			<string>1.2</string>
+			<integer>46134</integer>
 			<integer>0</integer>
 			<integer>2</integer>
 			<integer>0</integer>
@@ -297,7 +177,7 @@
 			<string>com.apple.PressAndHold</string>
 			<string>36</string>
 			<string>1.3</string>
-			<integer>208163</integer>
+			<integer>57097</integer>
 			<integer>0</integer>
 			<integer>2</integer>
 			<integer>0</integer>
@@ -312,9 +192,9 @@
 			<string>com.google.Chrome.helper</string>
 			<string>3396.87</string>
 			<string>67.0.3396.87</string>
-			<integer>1524</integer>
+			<integer>165</integer>
 			<integer>0</integer>
-			<integer>8</integer>
+			<integer>33</integer>
 			<integer>0</integer>
 			<integer>0</integer>
 			<integer>0</integer>
@@ -327,14 +207,29 @@
 			<string>com.google.Chrome</string>
 			<string>3396.87</string>
 			<string>67.0.3396.87</string>
-			<integer>24324</integer>
-			<integer>11163</integer>
-			<integer>2</integer>
-			<integer>11</integer>
+			<integer>56736</integer>
+			<integer>35244</integer>
 			<integer>1</integer>
-			<integer>120</integer>
-			<integer>26</integer>
-			<integer>19209</integer>
+			<integer>35</integer>
+			<integer>1</integer>
+			<integer>294</integer>
+			<integer>69</integer>
+			<integer>48850</integer>
+		</array>
+		<array>
+			<string>AppRecord</string>
+			<string>AOSHeartbeat</string>
+			<string>com.apple.AOSHeartbeat</string>
+			<string>267</string>
+			<string>1.07</string>
+			<integer>49</integer>
+			<integer>0</integer>
+			<integer>5</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
 		</array>
 		<array>
 			<string>AppRecord</string>
@@ -342,7 +237,7 @@
 			<string>com.apple.iTunesHelper</string>
 			<string>12.6.2</string>
 			<string>12.6.2</string>
-			<integer>70658</integer>
+			<integer>56736</integer>
 			<integer>0</integer>
 			<integer>1</integer>
 			<integer>0</integer>
@@ -357,59 +252,14 @@
 			<string></string>
 			<string></string>
 			<string></string>
-			<integer>23081</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string>Mail</string>
-			<string>com.apple.mail</string>
-			<string>3445.5.20</string>
-			<string>11.2</string>
-			<integer>203</integer>
-			<integer>10</integer>
-			<integer>1</integer>
+			<integer>57097</integer>
 			<integer>0</integer>
 			<integer>1</integer>
-			<integer>2</integer>
-			<integer>2</integer>
-			<integer>203</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string>talagent</string>
-			<string>com.apple.talagent</string>
-			<string></string>
-			<string></string>
-			<integer>23081</integer>
 			<integer>0</integer>
 			<integer>0</integer>
 			<integer>0</integer>
 			<integer>0</integer>
 			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string>Calendar</string>
-			<string>com.apple.iCal</string>
-			<string>2195.2.1</string>
-			<string>10.0</string>
-			<integer>2301</integer>
-			<integer>1375</integer>
-			<integer>1</integer>
-			<integer>2</integer>
-			<integer>1</integer>
-			<integer>3</integer>
-			<integer>2</integer>
-			<integer>1991</integer>
 		</array>
 		<array>
 			<string>AppRecord</string>
@@ -417,7 +267,22 @@
 			<string>com.apple.ViewBridgeAuxiliary</string>
 			<string></string>
 			<string></string>
-			<integer>23081</integer>
+			<integer>57115</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+		</array>
+		<array>
+			<string>AppRecord</string>
+			<string>talagent</string>
+			<string>com.apple.talagent</string>
+			<string></string>
+			<string></string>
+			<integer>57115</integer>
 			<integer>0</integer>
 			<integer>0</integer>
 			<integer>0</integer>
@@ -432,9 +297,9 @@
 			<string>com.apple.ncplugin.stocks</string>
 			<string>26</string>
 			<string>1.0</string>
-			<integer>187</integer>
+			<integer>14</integer>
 			<integer>0</integer>
-			<integer>12</integer>
+			<integer>0</integer>
 			<integer>0</integer>
 			<integer>0</integer>
 			<integer>0</integer>
@@ -447,14 +312,14 @@
 			<string>com.apple.iChat</string>
 			<string>5500</string>
 			<string>11.0</string>
-			<integer>156744</integer>
-			<integer>28</integer>
+			<integer>56736</integer>
+			<integer>9</integer>
 			<integer>1</integer>
 			<integer>0</integer>
 			<integer>1</integer>
-			<integer>2</integer>
-			<integer>2</integer>
-			<integer>628</integer>
+			<integer>1</integer>
+			<integer>1</integer>
+			<integer>309</integer>
 		</array>
 		<array>
 			<string>AppRecord</string>
@@ -462,74 +327,14 @@
 			<string>com.apple.Dictionary</string>
 			<string>203</string>
 			<string>2.2.2</string>
-			<integer>240</integer>
-			<integer>40</integer>
-			<integer>1</integer>
+			<integer>1183</integer>
+			<integer>8</integer>
+			<integer>2</integer>
 			<integer>0</integer>
 			<integer>1</integer>
+			<integer>4</integer>
 			<integer>1</integer>
-			<integer>1</integer>
-			<integer>240</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string>CalNCService</string>
-			<string>com.apple.CalendarNotification.CalNCService</string>
-			<string>550.2.3</string>
-			<string>1.0</string>
-			<integer>98406</integer>
-			<integer>0</integer>
-			<integer>1</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string>com.apple.WebKit.Databases</string>
-			<string>com.apple.WebKit.Databases</string>
-			<string>13604.5.6</string>
-			<string>13604</string>
-			<integer>213903</integer>
-			<integer>0</integer>
-			<integer>3</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string></string>
-			<string>com.apple.PackageKit.Install-in-Progress</string>
-			<string>727.1</string>
-			<string>3.0</string>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>1</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string>com.apple.iCal.CalendarNC</string>
-			<string>com.apple.iCal.CalendarNC</string>
-			<string>2195.2.1</string>
-			<string>1.0</string>
-			<integer>175</integer>
-			<integer>0</integer>
-			<integer>12</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
+			<integer>608</integer>
 		</array>
 		<array>
 			<string>AppRecord</string>
@@ -537,112 +342,7 @@
 			<string>com.apple.dock.extra</string>
 			<string>1</string>
 			<string>1.0</string>
-			<integer>214275</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string>LookupViewService</string>
-			<string>com.apple.LookupViewService</string>
-			<string>239</string>
-			<string>1.2</string>
-			<integer>47612</integer>
-			<integer>0</integer>
-			<integer>6</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string>com.apple.RemindersNC</string>
-			<string>com.apple.reminders.RemindersNC</string>
-			<string>1457.2.1</string>
-			<string>1.0</string>
-			<integer>176</integer>
-			<integer>0</integer>
-			<integer>12</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string>AirPlayUIAgent</string>
-			<string>com.apple.AirPlayUIAgent</string>
-			<string>356.14.3</string>
-			<string>2.0</string>
-			<integer>214275</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string>SiriNCService</string>
-			<string>com.apple.SiriNCService</string>
-			<string>146.2.3.1</string>
-			<string>146.2.3.1</string>
-			<integer>214148</integer>
-			<integer>0</integer>
-			<integer>4</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string>System Preferences</string>
-			<string>com.apple.systempreferences</string>
-			<string>14.0</string>
-			<string>14.0</string>
-			<integer>125</integer>
-			<integer>124</integer>
-			<integer>2</integer>
-			<integer>0</integer>
-			<integer>1</integer>
-			<integer>2</integer>
-			<integer>2</integer>
-			<integer>124</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string>Electron</string>
-			<string>com.microsoft.VSCode</string>
-			<string>1.24.1</string>
-			<string>1.24.1</string>
-			<integer>24323</integer>
-			<integer>5236</integer>
-			<integer>5</integer>
-			<integer>3</integer>
-			<integer>1</integer>
-			<integer>104</integer>
-			<integer>12</integer>
-			<integer>9871</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string>DiskImageMounter</string>
-			<string>com.apple.DiskImageMounter</string>
-			<string>480.30.2</string>
-			<string>480.30.2</string>
-			<integer>13</integer>
+			<integer>56736</integer>
 			<integer>0</integer>
 			<integer>1</integer>
 			<integer>0</integer>
@@ -657,7 +357,157 @@
 			<string>com.google.Keystone.Agent</string>
 			<string>1.2.10.105</string>
 			<string>1.2.10</string>
-			<integer>11</integer>
+			<integer>186</integer>
+			<integer>0</integer>
+			<integer>16</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+		</array>
+		<array>
+			<string>AppRecord</string>
+			<string></string>
+			<string>com.apple.Installer-Progress</string>
+			<string>454.4</string>
+			<string>1.0</string>
+			<integer>57115</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+		</array>
+		<array>
+			<string>AppRecord</string>
+			<string>Electron</string>
+			<string>com.microsoft.VSCode</string>
+			<string>1.24.1</string>
+			<string>1.24.1</string>
+			<integer>55339</integer>
+			<integer>13253</integer>
+			<integer>1</integer>
+			<integer>9</integer>
+			<integer>1</integer>
+			<integer>257</integer>
+			<integer>29</integer>
+			<integer>26466</integer>
+		</array>
+		<array>
+			<string>AppRecord</string>
+			<string>System Preferences</string>
+			<string>com.apple.systempreferences</string>
+			<string>14.0</string>
+			<string>14.0</string>
+			<integer>21</integer>
+			<integer>21</integer>
+			<integer>1</integer>
+			<integer>0</integer>
+			<integer>1</integer>
+			<integer>1</integer>
+			<integer>1</integer>
+			<integer>21</integer>
+		</array>
+		<array>
+			<string>AppRecord</string>
+			<string>AirPlayUIAgent</string>
+			<string>com.apple.AirPlayUIAgent</string>
+			<string>366.52.2</string>
+			<string>2.0</string>
+			<integer>56736</integer>
+			<integer>0</integer>
+			<integer>1</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+		</array>
+		<array>
+			<string>AppRecord</string>
+			<string>loginwindow</string>
+			<string>com.apple.loginwindow</string>
+			<string>1791.5</string>
+			<string>9.0</string>
+			<integer>57115</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+		</array>
+		<array>
+			<string>AppRecord</string>
+			<string>Siri</string>
+			<string>com.apple.Siri</string>
+			<string>146.4.5.1</string>
+			<string>146.4.5.1</string>
+			<integer>56736</integer>
+			<integer>0</integer>
+			<integer>1</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+		</array>
+		<array>
+			<string>AppRecord</string>
+			<string>Finder</string>
+			<string>com.apple.finder</string>
+			<string>10.13.5</string>
+			<string>10.13.5</string>
+			<integer>56738</integer>
+			<integer>152</integer>
+			<integer>1</integer>
+			<integer>0</integer>
+			<integer>1</integer>
+			<integer>15</integer>
+			<integer>4</integer>
+			<integer>3422</integer>
+		</array>
+		<array>
+			<string>AppRecord</string>
+			<string>iTunes</string>
+			<string>com.apple.iTunes</string>
+			<string>12.6.2</string>
+			<string>12.6.2</string>
+			<integer>56736</integer>
+			<integer>7</integer>
+			<integer>1</integer>
+			<integer>0</integer>
+			<integer>1</integer>
+			<integer>1</integer>
+			<integer>1</integer>
+			<integer>307</integer>
+		</array>
+		<array>
+			<string>AppRecord</string>
+			<string>CoreLocationAgent</string>
+			<string>com.apple.CoreLocationAgent</string>
+			<string>1486.12</string>
+			<string>1486.12</string>
+			<integer>57115</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+		</array>
+		<array>
+			<string>AppRecord</string>
+			<string>CoreServicesUIAgent</string>
+			<string>com.apple.coreservices.uiagent</string>
+			<string>180.7.6</string>
+			<string>180.7.6</string>
+			<integer>56638</integer>
 			<integer>0</integer>
 			<integer>7</integer>
 			<integer>0</integer>
@@ -668,43 +518,13 @@
 		</array>
 		<array>
 			<string>AppRecord</string>
-			<string>App Store</string>
-			<string>com.apple.appstore</string>
-			<string>654.8</string>
-			<string>2.3</string>
-			<integer>14577</integer>
-			<integer>158</integer>
-			<integer>2</integer>
-			<integer>0</integer>
-			<integer>1</integer>
-			<integer>3</integer>
-			<integer>3</integer>
-			<integer>758</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string>QuickLookUIHelper</string>
-			<string>com.apple.quicklook.ui.helper</string>
-			<string>743.7</string>
-			<string>5.0</string>
-			<integer>4</integer>
-			<integer>0</integer>
-			<integer>1</integer>
+			<string>Setup Assistant</string>
+			<string>com.apple.SetupAssistant</string>
+			<string>2006.3</string>
+			<string>10.10</string>
+			<integer>1228</integer>
 			<integer>0</integer>
 			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string>CharacterPalette</string>
-			<string>com.apple.CharacterPaletteIM</string>
-			<string>189</string>
-			<string>2.0.1</string>
-			<integer>214</integer>
-			<integer>0</integer>
-			<integer>1</integer>
 			<integer>0</integer>
 			<integer>0</integer>
 			<integer>0</integer>
@@ -715,101 +535,11 @@
 			<string>AppRecord</string>
 			<string>com.apple.WebKit.Networking</string>
 			<string>com.apple.WebKit.Networking</string>
-			<string>13604.5.6</string>
-			<string>13604</string>
-			<integer>38868</integer>
+			<string>13605.2.8</string>
+			<string>13605</string>
+			<integer>869</integer>
 			<integer>0</integer>
-			<integer>14</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string>LaterAgent</string>
-			<string>com.apple.lateragent</string>
-			<string>654.8</string>
-			<string>1.0</string>
-			<integer>214257</integer>
-			<integer>0</integer>
-			<integer>2</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string>Preview</string>
-			<string>com.apple.Preview</string>
-			<string>944.4</string>
-			<string>10.0</string>
-			<integer>15161</integer>
-			<integer>47</integer>
-			<integer>3</integer>
-			<integer>0</integer>
-			<integer>1</integer>
-			<integer>5</integer>
-			<integer>4</integer>
-			<integer>896</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string>CoreServicesUIAgent</string>
-			<string>com.apple.coreservices.uiagent</string>
-			<string>180</string>
-			<string>180</string>
-			<integer>123999</integer>
-			<integer>0</integer>
-			<integer>13</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string>UserNotificationCenter</string>
-			<string>com.apple.UserNotificationCenter</string>
-			<string>37</string>
-			<string>3.3.0</string>
-			<integer>62</integer>
-			<integer>0</integer>
-			<integer>2</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string>iTunes</string>
-			<string>com.apple.iTunes</string>
-			<string>12.6.2</string>
-			<string>12.6.2</string>
-			<integer>47581</integer>
-			<integer>43</integer>
-			<integer>1</integer>
-			<integer>0</integer>
-			<integer>1</integer>
-			<integer>1</integer>
-			<integer>1</integer>
-			<integer>343</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string>CoreLocationAgent</string>
-			<string>com.apple.CoreLocationAgent</string>
-			<string>1486.12</string>
-			<string>1486.12</string>
-			<integer>214275</integer>
-			<integer>0</integer>
-			<integer>0</integer>
+			<integer>6</integer>
 			<integer>0</integer>
 			<integer>0</integer>
 			<integer>0</integer>
@@ -820,11 +550,11 @@
 			<string>AppRecord</string>
 			<string>touristd</string>
 			<string>com.apple.touristd</string>
-			<string>1.0.49</string>
+			<string>1.0.52</string>
 			<string>1.1</string>
-			<integer>44692</integer>
+			<integer>110</integer>
 			<integer>0</integer>
-			<integer>6</integer>
+			<integer>3</integer>
 			<integer>0</integer>
 			<integer>0</integer>
 			<integer>0</integer>
@@ -833,13 +563,13 @@
 		</array>
 		<array>
 			<string>AppRecord</string>
-			<string>ShareMail</string>
-			<string>com.apple.share.Mail.compose</string>
-			<string>500</string>
+			<string>LaterAgent</string>
+			<string>com.apple.lateragent</string>
+			<string>657</string>
 			<string>1.0</string>
-			<integer>21</integer>
+			<integer>56727</integer>
 			<integer>0</integer>
-			<integer>2</integer>
+			<integer>1</integer>
 			<integer>0</integer>
 			<integer>0</integer>
 			<integer>0</integer>
@@ -848,33 +578,18 @@
 		</array>
 		<array>
 			<string>AppRecord</string>
-			<string>universalaccessd</string>
+			<string>Stickies</string>
+			<string>com.apple.Stickies</string>
 			<string></string>
-			<string></string>
-			<string></string>
-			<integer>14401</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string></string>
-			<string>com.apple.touristd</string>
-			<string>1.0.49</string>
-			<string>1.1</string>
+			<string>10.1</string>
+			<integer>50293</integer>
+			<integer>38</integer>
 			<integer>1</integer>
-			<integer>0</integer>
 			<integer>1</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
+			<integer>1</integer>
+			<integer>6</integer>
+			<integer>5</integer>
+			<integer>1300</integer>
 		</array>
 		<array>
 			<string>AppRecord</string>
@@ -882,9 +597,9 @@
 			<string>com.apple.quicklook.QuickLookUIService</string>
 			<string>1</string>
 			<string>1.0</string>
-			<integer>110352</integer>
+			<integer>51409</integer>
 			<integer>0</integer>
-			<integer>6</integer>
+			<integer>4</integer>
 			<integer>0</integer>
 			<integer>0</integer>
 			<integer>0</integer>
@@ -897,44 +612,44 @@
 			<string>com.apple.locationmenu</string>
 			<string>1</string>
 			<string>1.0</string>
-			<integer>119</integer>
+			<integer>13</integer>
 			<integer>0</integer>
-			<integer>9</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string>Finder</string>
-			<string>com.apple.finder</string>
-			<string>10.13.2</string>
-			<string>10.13.2</string>
-			<integer>214275</integer>
-			<integer>1011</integer>
-			<integer>0</integer>
-			<integer>4</integer>
 			<integer>1</integer>
-			<integer>33</integer>
-			<integer>19</integer>
-			<integer>5432</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
 		</array>
 		<array>
 			<string>AppRecord</string>
-			<string>loginwindow</string>
-			<string>com.apple.loginwindow</string>
-			<string>1791.2.6</string>
-			<string>9.0</string>
-			<integer>214281</integer>
+			<string>com.apple.preference.energysaver.remoteservice</string>
+			<string>com.apple.preference.energysaver.remoteservice</string>
+			<string>1</string>
+			<string>1.0</string>
+			<integer>20</integer>
+			<integer>0</integer>
+			<integer>2</integer>
 			<integer>0</integer>
 			<integer>0</integer>
 			<integer>0</integer>
 			<integer>0</integer>
 			<integer>0</integer>
+		</array>
+		<array>
+			<string>AppRecord</string>
+			<string>Preview</string>
+			<string>com.apple.Preview</string>
+			<string>944.5</string>
+			<string>10.0</string>
+			<integer>13168</integer>
+			<integer>51</integer>
+			<integer>1</integer>
 			<integer>0</integer>
-			<integer>0</integer>
+			<integer>1</integer>
+			<integer>29</integer>
+			<integer>7</integer>
+			<integer>5579</integer>
 		</array>
 		<array>
 			<string>AppRecord</string>
@@ -942,9 +657,39 @@
 			<string>com.apple.OSDUIHelper</string>
 			<string>1</string>
 			<string>1.0</string>
-			<integer>161805</integer>
+			<integer>10574</integer>
 			<integer>0</integer>
+			<integer>1</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+		</array>
+		<array>
+			<string>AppRecord</string>
+			<string>Safari</string>
+			<string>com.apple.Safari</string>
+			<string>13605.2.8</string>
+			<string>11.1.1</string>
+			<integer>25608</integer>
+			<integer>372</integer>
 			<integer>2</integer>
+			<integer>2</integer>
+			<integer>1</integer>
+			<integer>11</integer>
+			<integer>9</integer>
+			<integer>1689</integer>
+		</array>
+		<array>
+			<string>AppRecord</string>
+			<string>universalaccessd</string>
+			<string></string>
+			<string></string>
+			<string></string>
+			<integer>14778</integer>
+			<integer>0</integer>
+			<integer>0</integer>
 			<integer>0</integer>
 			<integer>0</integer>
 			<integer>0</integer>
@@ -955,11 +700,11 @@
 			<string>AppRecord</string>
 			<string>cloudphotosd</string>
 			<string>com.apple.cloudphotosd</string>
-			<string>3251.12.190</string>
+			<string>3271.13.150</string>
 			<string>3.0</string>
-			<integer>214269</integer>
+			<integer>57115</integer>
 			<integer>0</integer>
-			<integer>1</integer>
+			<integer>0</integer>
 			<integer>0</integer>
 			<integer>0</integer>
 			<integer>0</integer>
@@ -972,9 +717,54 @@
 			<string>com.microsoft.VSCode.helper</string>
 			<string></string>
 			<string></string>
-			<integer>549</integer>
+			<integer>20740</integer>
 			<integer>0</integer>
+			<integer>11</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+		</array>
+		<array>
+			<string>AppRecord</string>
+			<string></string>
+			<string></string>
+			<string></string>
+			<string></string>
+			<integer>37254</integer>
+			<integer>0</integer>
+			<integer>3</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+			<integer>0</integer>
+		</array>
+		<array>
+			<string>AppRecord</string>
+			<string>Terminal</string>
+			<string>com.apple.Terminal</string>
+			<string>404</string>
+			<string>2.8.2</string>
+			<integer>56736</integer>
+			<integer>584</integer>
+			<integer>1</integer>
+			<integer>0</integer>
+			<integer>1</integer>
+			<integer>12</integer>
 			<integer>4</integer>
+			<integer>3319</integer>
+		</array>
+		<array>
+			<string>AppRecord</string>
+			<string>TMHelperAgent</string>
+			<string>com.apple.TMHelperAgent</string>
+			<string>10.9</string>
+			<string>10.9</string>
+			<integer>372</integer>
+			<integer>0</integer>
+			<integer>6</integer>
 			<integer>0</integer>
 			<integer>0</integer>
 			<integer>0</integer>
@@ -983,103 +773,13 @@
 		</array>
 		<array>
 			<string>AppRecord</string>
-			<string>Notes</string>
-			<string>com.apple.Notes</string>
-			<string>868</string>
-			<string>4.5</string>
-			<integer>14</integer>
-			<integer>2</integer>
-			<integer>1</integer>
-			<integer>0</integer>
-			<integer>1</integer>
-			<integer>2</integer>
-			<integer>1</integer>
-			<integer>14</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string>imklaunchagent</string>
+			<string>open</string>
 			<string></string>
 			<string></string>
 			<string></string>
-			<integer>191194</integer>
+			<integer>53117</integer>
 			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string>ViewBridgeAuxiliary</string>
-			<string>com.apple.ViewBridgeAuxiliary</string>
-			<string></string>
-			<string></string>
-			<integer>191200</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string>universalaccessd</string>
-			<string></string>
-			<string></string>
-			<string></string>
-			<integer>14400</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string>Code Helper</string>
-			<string>com.microsoft.VSCode.helper</string>
-			<string></string>
-			<string></string>
-			<integer>8742</integer>
-			<integer>0</integer>
-			<integer>22</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string></string>
-			<string></string>
-			<string></string>
-			<string></string>
-			<integer>21</integer>
-			<integer>0</integer>
-			<integer>1</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string>talagent</string>
-			<string>com.apple.talagent</string>
-			<string></string>
-			<string></string>
-			<integer>191194</integer>
-			<integer>0</integer>
-			<integer>0</integer>
+			<integer>8</integer>
 			<integer>0</integer>
 			<integer>0</integer>
 			<integer>0</integer>
@@ -1092,39 +792,9 @@
 			<string>com.apple.iTunes.VisualizerService</string>
 			<string>12.6.2</string>
 			<string>12.6.2</string>
-			<integer>47577</integer>
+			<integer>56736</integer>
 			<integer>0</integer>
 			<integer>2</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string>TMHelperAgent</string>
-			<string>com.apple.TMHelperAgent</string>
-			<string>10.9</string>
-			<string>10.9</string>
-			<integer>1194</integer>
-			<integer>0</integer>
-			<integer>21</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-			<integer>0</integer>
-		</array>
-		<array>
-			<string>AppRecord</string>
-			<string>AOSHeartbeat</string>
-			<string>com.apple.AOSHeartbeat</string>
-			<string>264</string>
-			<string>1.07</string>
-			<integer>142</integer>
-			<integer>0</integer>
-			<integer>14</integer>
 			<integer>0</integer>
 			<integer>0</integer>
 			<integer>0</integer>
@@ -1136,26 +806,20 @@
 	<array/>
 	<key>appsPerActivityPeriod</key>
 	<array>
-		<date>2018-06-19T04:20:16Z</date>
-		<integer>5</integer>
+		<date>2018-06-25T12:23:33Z</date>
+		<integer>3</integer>
 		<array>
-			<integer>4</integer>
-			<integer>1</integer>
-			<integer>1</integer>
-			<integer>2</integer>
-			<integer>3</integer>
-			<integer>2</integer>
 			<integer>1</integer>
 		</array>
 	</array>
 	<key>lastMorningLogDate</key>
-	<date>2018-06-19T04:20:16Z</date>
+	<date>2018-06-25T12:23:34Z</date>
 	<key>lastWeeklyLogDate</key>
-	<date>2018-06-17T23:39:14Z</date>
+	<date>2018-06-24T04:00:01Z</date>
 	<key>submissionScheduler</key>
 	<array>
-		<date>2018-06-20T04:03:04Z</date>
-		<false/>
+		<date>2018-06-25T12:57:43Z</date>
+		<true/>
 	</array>
 	<key>systemRecord</key>
 	<array>
@@ -1164,14 +828,14 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<integer>214281</integer>
-		<integer>118112</integer>
-		<integer>2</integer>
-		<integer>153</integer>
+		<integer>57115</integer>
+		<integer>50055</integer>
+		<integer>1</integer>
+		<integer>48</integer>
 		<integer>0</integer>
-		<integer>296</integer>
-		<integer>2</integer>
-		<integer>128080</integer>
+		<integer>80</integer>
+		<integer>1</integer>
+		<integer>54795</integer>
 	</array>
 </dict>
 </plist>

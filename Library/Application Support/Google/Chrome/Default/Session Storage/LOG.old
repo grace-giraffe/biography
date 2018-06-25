@@ -1,1 +1,18 @@
-2018/06/18-11:46:37.642 33795 Reusing MANIFEST /Users/nextechcatapult/Library/Application Support/Google/Chrome/Default/Session Storage/MANIFEST-000001
+2018/06/18-13:32:25.600 94723 Reusing MANIFEST /Users/nextechcatapult/Library/Application Support/Google/Chrome/Default/Session Storage/MANIFEST-000001
+2018/06/18-13:32:25.600 94723 Recovering log #3
+2018/06/18-13:32:25.600 94723 Reusing old log /Users/nextechcatapult/Library/Application Support/Google/Chrome/Default/Session Storage/000003.log 
+2018/06/19-11:18:09.596 154371 Level-0 table #5: started
+2018/06/19-11:18:09.598 154371 Level-0 table #5: 16561 bytes OK
+2018/06/19-11:18:09.599 154371 Delete type=0 #3
+2018/06/20-13:20:40.286 154371 Level-0 table #7: started
+2018/06/20-13:20:40.288 154371 Level-0 table #7: 22369 bytes OK
+2018/06/20-13:20:40.288 154371 Delete type=0 #4
+2018/06/20-14:10:14.056 154371 Compacting 1@1 + 1@2 files
+2018/06/20-14:10:14.065 154371 Generated table #8@1: 191 keys, 11244 bytes
+2018/06/20-14:10:14.065 154371 Compacted 1@1 + 1@2 files => 11244 bytes
+2018/06/20-14:10:14.066 154371 compacted to: files[ 0 0 1 0 0 0 0 ]
+2018/06/20-14:10:14.066 154371 Delete type=2 #7
+2018/06/20-14:10:14.066 154371 Delete type=2 #5
+2018/06/20-22:25:27.110 154371 Level-0 table #10: started
+2018/06/20-22:25:27.112 154371 Level-0 table #10: 15308 bytes OK
+2018/06/20-22:25:27.113 154371 Delete type=0 #6

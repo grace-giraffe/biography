@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>t</key>
+	<dict>
+		<key>DISPLAY_NAME</key>
+		<string>Terminal</string>
+		<key>LAST_USED</key>
+		<date>2018-06-21T14:49:42Z</date>
+		<key>URL</key>
+		<string>file:///Applications/Utilities/Terminal.app/</string>
+	</dict>
+	<key>ter</key>
+	<dict>
+		<key>DISPLAY_NAME</key>
+		<string>Terminal</string>
+		<key>LAST_USED</key>
+		<date>2018-06-22T13:48:59Z</date>
+		<key>URL</key>
+		<string>file:///Applications/Utilities/Terminal.app/</string>
+	</dict>
+	<key>term</key>
+	<dict>
+		<key>DISPLAY_NAME</key>
+		<string>Terminal</string>
+		<key>LAST_USED</key>
+		<date>2018-06-21T13:21:18Z</date>
+		<key>URL</key>
+		<string>file:///Applications/Utilities/Terminal.app/</string>
+	</dict>
+	<key>terminal</key>
+	<dict>
+		<key>DISPLAY_NAME</key>
+		<string>Terminal</string>
+		<key>LAST_USED</key>
+		<date>2018-06-20T18:42:58Z</date>
+		<key>URL</key>
+		<string>file:///Applications/Utilities/Terminal.app/</string>
+	</dict>
+</dict>
+</plist>

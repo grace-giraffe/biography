@@ -1,0 +1,10 @@
+ls
+cd documents
+ls
+git clone https://github.com/grace-giraffe/restaurantmenu.git
+cd restaurantmenu/
+ls
+code . -r
+ls
+cd documents
+cd desktop

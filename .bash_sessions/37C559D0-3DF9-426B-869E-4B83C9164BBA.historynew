@@ -1,0 +1,6 @@
+ls
+cd documents
+git clone https://github.com/grace-giraffe/image-editing-exercise.git
+cd image-editing-exercise
+ls
+code . -r

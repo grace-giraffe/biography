@@ -1,6 +1,36 @@
-2018/06/18-13:32:25.600 94723 Reusing MANIFEST /Users/nextechcatapult/Library/Application Support/Google/Chrome/Default/Session Storage/MANIFEST-000001
-2018/06/18-13:32:25.600 94723 Recovering log #3
-2018/06/18-13:32:25.600 94723 Reusing old log /Users/nextechcatapult/Library/Application Support/Google/Chrome/Default/Session Storage/000003.log 
-2018/06/19-11:18:09.596 154371 Level-0 table #5: started
-2018/06/19-11:18:09.598 154371 Level-0 table #5: 16561 bytes OK
-2018/06/19-11:18:09.599 154371 Delete type=0 #3
+2018/06/21-00:14:21.816 72455 Reusing MANIFEST /Users/nextechcatapult/Library/Application Support/Google/Chrome/Default/Session Storage/MANIFEST-000001
+2018/06/21-00:14:21.816 72455 Recovering log #9
+2018/06/21-00:14:21.817 72455 Reusing old log /Users/nextechcatapult/Library/Application Support/Google/Chrome/Default/Session Storage/000009.log 
+2018/06/21-10:19:01.400 149871 Compacting 1@1 + 1@2 files
+2018/06/21-10:19:01.411 149871 Generated table #12@1: 229 keys, 5282 bytes
+2018/06/21-10:19:01.411 149871 Compacted 1@1 + 1@2 files => 5282 bytes
+2018/06/21-10:19:01.412 149871 compacted to: files[ 0 0 1 0 0 0 0 ]
+2018/06/21-10:19:01.412 149871 Delete type=2 #10
+2018/06/21-10:19:01.413 149871 Delete type=2 #8
+2018/06/21-11:56:12.264 149871 Level-0 table #14: started
+2018/06/21-11:56:12.266 149871 Level-0 table #14: 21416 bytes OK
+2018/06/21-11:56:12.267 149871 Delete type=0 #9
+2018/06/21-13:26:51.245 149871 Compacting 1@1 + 1@2 files
+2018/06/21-13:26:51.255 149871 Generated table #15@1: 144 keys, 10908 bytes
+2018/06/21-13:26:51.255 149871 Compacted 1@1 + 1@2 files => 10908 bytes
+2018/06/21-13:26:51.256 149871 compacted to: files[ 0 0 1 0 0 0 0 ]
+2018/06/21-13:26:51.256 149871 Delete type=2 #14
+2018/06/21-13:26:51.257 149871 Delete type=2 #12
+2018/06/21-18:24:23.751 149871 Level-0 table #17: started
+2018/06/21-18:24:23.752 149871 Level-0 table #17: 22509 bytes OK
+2018/06/21-18:24:23.753 149871 Delete type=0 #13
+2018/06/22-11:18:40.782 149871 Compacting 1@1 + 1@2 files
+2018/06/22-11:18:40.791 149871 Generated table #18@1: 222 keys, 13238 bytes
+2018/06/22-11:18:40.791 149871 Compacted 1@1 + 1@2 files => 13238 bytes
+2018/06/22-11:18:40.791 149871 compacted to: files[ 0 0 1 0 0 0 0 ]
+2018/06/22-11:18:40.791 149871 Delete type=2 #15
+2018/06/22-11:18:40.792 149871 Delete type=2 #17
+2018/06/23-15:23:49.436 149871 Level-0 table #20: started
+2018/06/23-15:23:49.438 149871 Level-0 table #20: 18272 bytes OK
+2018/06/23-15:23:49.438 149871 Delete type=0 #16
+2018/06/25-09:01:06.920 149871 Compacting 1@1 + 1@2 files
+2018/06/25-09:01:06.922 149871 Generated table #21@1: 232 keys, 5911 bytes
+2018/06/25-09:01:06.922 149871 Compacted 1@1 + 1@2 files => 5911 bytes
+2018/06/25-09:01:06.922 149871 compacted to: files[ 0 0 1 0 0 0 0 ]
+2018/06/25-09:01:06.922 149871 Delete type=2 #20
+2018/06/25-09:01:06.923 149871 Delete type=2 #18

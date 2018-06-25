@@ -16,3 +16,63 @@
 [2018-06-19 14:19:22.700] [exthost19] [info] ExtensionService#_doActivateExtension Zignd.html-css-class-completion {"startup":true,"activationEvent":"*"}
 [2018-06-19 14:19:22.700] [exthost19] [info] ExtensionService#loadCommonJSModule /Users/nextechcatapult/.vscode/extensions/zignd.html-css-class-completion-1.17.1/out/src/extension
 [2018-06-19 14:19:23.006] [exthost19] [info] eager extensions activated
+[2018-06-19 14:25:41.618] [exthost19] [info] extension host started
+[2018-06-19 14:25:41.663] [exthost19] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2018-06-19 14:25:41.663] [exthost19] [info] ExtensionService#loadCommonJSModule /private/var/folders/x_/vdt6428d6cj852j3gycm176m0000gn/T/AppTranslocation/680FE136-149D-4C7E-A931-6E814772AA35/d/Visual Studio Code.app/Contents/Resources/app/extensions/emmet/out/extension
+[2018-06-19 14:25:41.729] [exthost19] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2018-06-19 14:25:41.729] [exthost19] [info] ExtensionService#loadCommonJSModule /private/var/folders/x_/vdt6428d6cj852j3gycm176m0000gn/T/AppTranslocation/680FE136-149D-4C7E-A931-6E814772AA35/d/Visual Studio Code.app/Contents/Resources/app/extensions/git/out/main
+[2018-06-19 14:25:41.888] [exthost19] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2018-06-19 14:25:41.888] [exthost19] [info] ExtensionService#loadCommonJSModule /private/var/folders/x_/vdt6428d6cj852j3gycm176m0000gn/T/AppTranslocation/680FE136-149D-4C7E-A931-6E814772AA35/d/Visual Studio Code.app/Contents/Resources/app/extensions/merge-conflict/out/extension
+[2018-06-19 14:25:41.902] [exthost19] [info] ExtensionService#_doActivateExtension vscode.search-rg {"startup":true,"activationEvent":"*"}
+[2018-06-19 14:25:41.902] [exthost19] [info] ExtensionService#loadCommonJSModule /private/var/folders/x_/vdt6428d6cj852j3gycm176m0000gn/T/AppTranslocation/680FE136-149D-4C7E-A931-6E814772AA35/d/Visual Studio Code.app/Contents/Resources/app/extensions/search-rg/out/extension
+[2018-06-19 14:25:41.908] [exthost19] [info] ExtensionService#_doActivateExtension formulahendry.auto-close-tag {"startup":true,"activationEvent":"*"}
+[2018-06-19 14:25:41.908] [exthost19] [info] ExtensionService#loadCommonJSModule /Users/nextechcatapult/.vscode/extensions/formulahendry.auto-close-tag-0.5.6/out/src/extension
+[2018-06-19 14:25:41.909] [exthost19] [info] ExtensionService#_doActivateExtension formulahendry.auto-rename-tag {"startup":true,"activationEvent":"*"}
+[2018-06-19 14:25:41.909] [exthost19] [info] ExtensionService#loadCommonJSModule /Users/nextechcatapult/.vscode/extensions/formulahendry.auto-rename-tag-0.0.15/out/src/extension
+[2018-06-19 14:25:41.911] [exthost19] [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer {"startup":true,"activationEvent":"*"}
+[2018-06-19 14:25:41.911] [exthost19] [info] ExtensionService#loadCommonJSModule /Users/nextechcatapult/.vscode/extensions/ritwickdey.liveserver-5.0.0/out/src/extension
+[2018-06-19 14:25:42.156] [exthost19] [info] ExtensionService#_doActivateExtension Zignd.html-css-class-completion {"startup":true,"activationEvent":"*"}
+[2018-06-19 14:25:42.156] [exthost19] [info] ExtensionService#loadCommonJSModule /Users/nextechcatapult/.vscode/extensions/zignd.html-css-class-completion-1.17.1/out/src/extension
+[2018-06-19 14:25:42.435] [exthost19] [info] eager extensions activated
+[2018-06-19 14:25:47.525] [exthost19] [info] ExtensionService#_doActivateExtension vscode.html-language-features {"startup":false,"activationEvent":"onLanguage:html"}
+[2018-06-19 14:25:47.525] [exthost19] [info] ExtensionService#loadCommonJSModule /private/var/folders/x_/vdt6428d6cj852j3gycm176m0000gn/T/AppTranslocation/680FE136-149D-4C7E-A931-6E814772AA35/d/Visual Studio Code.app/Contents/Resources/app/extensions/html-language-features/client/out/htmlMain
+[2018-06-19 14:42:55.148] [exthost19] [info] ExtensionService#_doActivateExtension vscode.configuration-editing {"startup":false,"activationEvent":"onLanguage:jsonc"}
+[2018-06-19 14:42:55.148] [exthost19] [info] ExtensionService#loadCommonJSModule /private/var/folders/x_/vdt6428d6cj852j3gycm176m0000gn/T/AppTranslocation/680FE136-149D-4C7E-A931-6E814772AA35/d/Visual Studio Code.app/Contents/Resources/app/extensions/configuration-editing/out/extension
+[2018-06-19 14:42:55.183] [exthost19] [info] ExtensionService#_doActivateExtension vscode.json-language-features {"startup":false,"activationEvent":"onLanguage:jsonc"}
+[2018-06-19 14:42:55.183] [exthost19] [info] ExtensionService#loadCommonJSModule /private/var/folders/x_/vdt6428d6cj852j3gycm176m0000gn/T/AppTranslocation/680FE136-149D-4C7E-A931-6E814772AA35/d/Visual Studio Code.app/Contents/Resources/app/extensions/json-language-features/client/out/jsonMain
+[2018-06-20 10:39:30.709] [exthost19] [info] extension host started
+[2018-06-20 10:39:30.756] [exthost19] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2018-06-20 10:39:30.756] [exthost19] [info] ExtensionService#loadCommonJSModule /private/var/folders/x_/vdt6428d6cj852j3gycm176m0000gn/T/AppTranslocation/680FE136-149D-4C7E-A931-6E814772AA35/d/Visual Studio Code.app/Contents/Resources/app/extensions/emmet/out/extension
+[2018-06-20 10:39:30.850] [exthost19] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2018-06-20 10:39:30.850] [exthost19] [info] ExtensionService#loadCommonJSModule /private/var/folders/x_/vdt6428d6cj852j3gycm176m0000gn/T/AppTranslocation/680FE136-149D-4C7E-A931-6E814772AA35/d/Visual Studio Code.app/Contents/Resources/app/extensions/git/out/main
+[2018-06-20 10:39:31.155] [exthost19] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2018-06-20 10:39:31.155] [exthost19] [info] ExtensionService#loadCommonJSModule /private/var/folders/x_/vdt6428d6cj852j3gycm176m0000gn/T/AppTranslocation/680FE136-149D-4C7E-A931-6E814772AA35/d/Visual Studio Code.app/Contents/Resources/app/extensions/merge-conflict/out/extension
+[2018-06-20 10:39:31.181] [exthost19] [info] ExtensionService#_doActivateExtension vscode.search-rg {"startup":true,"activationEvent":"*"}
+[2018-06-20 10:39:31.181] [exthost19] [info] ExtensionService#loadCommonJSModule /private/var/folders/x_/vdt6428d6cj852j3gycm176m0000gn/T/AppTranslocation/680FE136-149D-4C7E-A931-6E814772AA35/d/Visual Studio Code.app/Contents/Resources/app/extensions/search-rg/out/extension
+[2018-06-20 10:39:31.196] [exthost19] [info] ExtensionService#_doActivateExtension formulahendry.auto-close-tag {"startup":true,"activationEvent":"*"}
+[2018-06-20 10:39:31.196] [exthost19] [info] ExtensionService#loadCommonJSModule /Users/nextechcatapult/.vscode/extensions/formulahendry.auto-close-tag-0.5.6/out/src/extension
+[2018-06-20 10:39:31.199] [exthost19] [info] ExtensionService#_doActivateExtension formulahendry.auto-rename-tag {"startup":true,"activationEvent":"*"}
+[2018-06-20 10:39:31.199] [exthost19] [info] ExtensionService#loadCommonJSModule /Users/nextechcatapult/.vscode/extensions/formulahendry.auto-rename-tag-0.0.15/out/src/extension
+[2018-06-20 10:39:31.205] [exthost19] [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer {"startup":true,"activationEvent":"*"}
+[2018-06-20 10:39:31.205] [exthost19] [info] ExtensionService#loadCommonJSModule /Users/nextechcatapult/.vscode/extensions/ritwickdey.liveserver-5.0.0/out/src/extension
+[2018-06-20 10:39:31.724] [exthost19] [info] ExtensionService#_doActivateExtension Zignd.html-css-class-completion {"startup":true,"activationEvent":"*"}
+[2018-06-20 10:39:31.724] [exthost19] [info] ExtensionService#loadCommonJSModule /Users/nextechcatapult/.vscode/extensions/zignd.html-css-class-completion-1.17.1/out/src/extension
+[2018-06-20 10:39:32.302] [exthost19] [info] eager extensions activated
+[2018-06-20 10:39:43.204] [exthost19] [info] extension host started
+[2018-06-20 10:39:43.234] [exthost19] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2018-06-20 10:39:43.234] [exthost19] [info] ExtensionService#loadCommonJSModule /private/var/folders/x_/vdt6428d6cj852j3gycm176m0000gn/T/AppTranslocation/680FE136-149D-4C7E-A931-6E814772AA35/d/Visual Studio Code.app/Contents/Resources/app/extensions/emmet/out/extension
+[2018-06-20 10:39:43.289] [exthost19] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2018-06-20 10:39:43.289] [exthost19] [info] ExtensionService#loadCommonJSModule /private/var/folders/x_/vdt6428d6cj852j3gycm176m0000gn/T/AppTranslocation/680FE136-149D-4C7E-A931-6E814772AA35/d/Visual Studio Code.app/Contents/Resources/app/extensions/git/out/main
+[2018-06-20 10:39:43.462] [exthost19] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2018-06-20 10:39:43.462] [exthost19] [info] ExtensionService#loadCommonJSModule /private/var/folders/x_/vdt6428d6cj852j3gycm176m0000gn/T/AppTranslocation/680FE136-149D-4C7E-A931-6E814772AA35/d/Visual Studio Code.app/Contents/Resources/app/extensions/merge-conflict/out/extension
+[2018-06-20 10:39:43.475] [exthost19] [info] ExtensionService#_doActivateExtension vscode.search-rg {"startup":true,"activationEvent":"*"}
+[2018-06-20 10:39:43.475] [exthost19] [info] ExtensionService#loadCommonJSModule /private/var/folders/x_/vdt6428d6cj852j3gycm176m0000gn/T/AppTranslocation/680FE136-149D-4C7E-A931-6E814772AA35/d/Visual Studio Code.app/Contents/Resources/app/extensions/search-rg/out/extension
+[2018-06-20 10:39:43.481] [exthost19] [info] ExtensionService#_doActivateExtension formulahendry.auto-close-tag {"startup":true,"activationEvent":"*"}
+[2018-06-20 10:39:43.481] [exthost19] [info] ExtensionService#loadCommonJSModule /Users/nextechcatapult/.vscode/extensions/formulahendry.auto-close-tag-0.5.6/out/src/extension
+[2018-06-20 10:39:43.482] [exthost19] [info] ExtensionService#_doActivateExtension formulahendry.auto-rename-tag {"startup":true,"activationEvent":"*"}
+[2018-06-20 10:39:43.482] [exthost19] [info] ExtensionService#loadCommonJSModule /Users/nextechcatapult/.vscode/extensions/formulahendry.auto-rename-tag-0.0.15/out/src/extension
+[2018-06-20 10:39:43.484] [exthost19] [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer {"startup":true,"activationEvent":"*"}
+[2018-06-20 10:39:43.484] [exthost19] [info] ExtensionService#loadCommonJSModule /Users/nextechcatapult/.vscode/extensions/ritwickdey.liveserver-5.1.1/out/src/extension
+[2018-06-20 10:39:43.802] [exthost19] [info] ExtensionService#_doActivateExtension Zignd.html-css-class-completion {"startup":true,"activationEvent":"*"}
+[2018-06-20 10:39:43.802] [exthost19] [info] ExtensionService#loadCommonJSModule /Users/nextechcatapult/.vscode/extensions/zignd.html-css-class-completion-1.17.1/out/src/extension
+[2018-06-20 10:39:44.086] [exthost19] [info] eager extensions activated

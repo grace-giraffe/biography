@@ -1,0 +1,5 @@
+git init
+git commit -m "first commit"
+git commit add origin https://github.com/grace-giraffe/loops.git
+git remote add origin https://github.com/grace-giraffe/loops.git
+git push -u origin master

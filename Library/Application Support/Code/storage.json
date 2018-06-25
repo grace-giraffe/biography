@@ -63,7 +63,7 @@
         },
         "workbench.action.closeWindow": {
             "id": "workbench.action.closeWindow",
-            "label": "Cmd+W",
+            "label": "Shift+Cmd+W",
             "isNative": true
         },
         "workbench.action.closeFolder": {
@@ -440,6 +440,11 @@
             "id": "workbench.action.tasks.build",
             "label": "Shift+Cmd+B",
             "isNative": true
+        },
+        "workbench.action.openRecent": {
+            "id": "workbench.action.openRecent",
+            "label": "Ctrl+R",
+            "isNative": true
         }
     },
     "theme": "vs-dark vscode-theme-defaults-themes-dark_plus-json",
@@ -447,14 +452,32 @@
     "windowsState": {
         "openedWindows": [],
         "lastActiveWindow": {
-            "backupPath": "/Users/nextechcatapult/Library/Application Support/Code/Backups/1529343383507",
+            "folderPath": "/Users/nextechcatapult/Documents/restaurantmenu",
+            "backupPath": "/Users/nextechcatapult/Library/Application Support/Code/Backups/f46525081201ebf4e654261541d4a2db",
             "uiState": {
                 "mode": 1,
-                "x": 208,
-                "y": 55,
+                "display": 69679040,
                 "width": 1024,
-                "height": 768
+                "height": 768,
+                "x": 208,
+                "y": 58
             }
         }
+    },
+    "pickerWorkingDir": "/Users/nextechcatapult/Documents",
+    "openedPathsList": {
+        "workspaces": [
+            "/Users/nextechcatapult/Documents/image-editing-exercise",
+            "/Users/nextechcatapult/Documents/image-thumbnail-exercise",
+            "/Users/nextechcatapult/Documents/biography",
+            "/Users/nextechcatapult/Documents/click-handler",
+            "/Users/nextechcatapult/scripts",
+            "/Users/nextechcatapult/Documents/restaurantmenu",
+            "/Users/nextechcatapult/Documents/image-practice",
+            "/Users/nextechcatapult/biography",
+            "/Users/nextechcatapult/restrauntmenu",
+            "/Users/nextechcatapult/biography/restrauntmenu"
+        ],
+        "files": []
     }
 }

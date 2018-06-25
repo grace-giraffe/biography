@@ -6,10 +6,10 @@
             "date_added": "13173810731653511",
             "id": "5",
             "meta_info": {
-               "last_visited_desktop": "13173894932039362"
+               "last_visited_desktop": "13174407986580629"
             },
             "name": "Canvas",
-            "sync_transaction_version": "14",
+            "sync_transaction_version": "42",
             "type": "url",
             "url": "https://my.kenzie.academy/"
          }, {
@@ -37,7 +37,7 @@
          "name": "Other Bookmarks",
          "type": "folder"
       },
-      "sync_transaction_version": "14",
+      "sync_transaction_version": "42",
       "synced": {
          "children": [  ],
          "date_added": "13173810337370255",

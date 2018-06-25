@@ -13,3 +13,19 @@ fsck_hfs started at Mon Jun 18 11:44:40 2018
 ** The volume Google Chrome appears to be OK.
 fsck_hfs completed at Mon Jun 18 11:44:40 2018
 
+
+fsck_hfs started at Wed Jun 20 11:39:10 2018
+** /dev/rdisk2s1 (NO WRITE)
+   Executing fsck_hfs (version hfs-407.30.1).
+** Checking Journaled HFS Plus volume.
+   The volume name is Notes Better
+** Checking extents overflow file.
+** Checking catalog file.
+** Checking multi-linked files.
+** Checking catalog hierarchy.
+** Checking extended attributes file.
+** Checking volume bitmap.
+** Checking volume information.
+** The volume Notes Better appears to be OK.
+fsck_hfs completed at Wed Jun 20 11:39:10 2018
+

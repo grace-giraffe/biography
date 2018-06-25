@@ -1,20 +1,30 @@
 {
-   "checksum": "1083b6f58bc57d2d12476d81e27ce997",
+   "checksum": "166f3781d15f91005715f4cd88d91517",
    "roots": {
       "bookmark_bar": {
          "children": [ {
             "date_added": "13173810731653511",
             "id": "5",
             "meta_info": {
-               "last_visited_desktop": "13173810731655100"
+               "last_visited_desktop": "13173998205544650"
             },
             "name": "Canvas",
-            "sync_transaction_version": "6",
+            "sync_transaction_version": "25",
             "type": "url",
             "url": "https://my.kenzie.academy/"
+         }, {
+            "date_added": "13173890368204494",
+            "id": "7",
+            "meta_info": {
+               "last_visited_desktop": "13173890368205996"
+            },
+            "name": "Git - Reference",
+            "sync_transaction_version": "13",
+            "type": "url",
+            "url": "https://git-scm.com/docs"
          } ],
          "date_added": "13173810337370246",
-         "date_modified": "13173810731653511",
+         "date_modified": "13173890368204494",
          "id": "1",
          "name": "Bookmarks Bar",
          "type": "folder"
@@ -27,7 +37,7 @@
          "name": "Other Bookmarks",
          "type": "folder"
       },
-      "sync_transaction_version": "6",
+      "sync_transaction_version": "25",
       "synced": {
          "children": [  ],
          "date_added": "13173810337370255",

@@ -394,3 +394,9 @@ git push -u master
 git push -u origin master
 lw
 ls
+console.log("Display the numbers from 1 to 20. "):
+git commit -m "first update"
+git status
+git add .
+git status
+git commit

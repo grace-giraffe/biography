@@ -23,16 +23,32 @@
 # Registers:
 
 # File marks:
-'0  17  0  ~/Documents/image-editing-exercise/.git/COMMIT_EDITMSG
-|4,48,17,0,1529932707,"~/Documents/image-editing-exercise/.git/COMMIT_EDITMSG"
+'0  136  0  ~/.git/COMMIT_EDITMSG
+|4,48,136,0,1529938730,"~/.git/COMMIT_EDITMSG"
+'1  17  0  ~/Documents/image-editing-exercise/.git/COMMIT_EDITMSG
+|4,49,17,0,1529932707,"~/Documents/image-editing-exercise/.git/COMMIT_EDITMSG"
 
 # Jumplist (newest first):
+-'  136  0  ~/.git/COMMIT_EDITMSG
+|4,39,136,0,1529938730,"~/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.git/COMMIT_EDITMSG
+|4,39,1,0,1529938634,"~/.git/COMMIT_EDITMSG"
+-'  17  0  ~/Documents/image-editing-exercise/.git/COMMIT_EDITMSG
+|4,39,17,0,1529932707,"~/Documents/image-editing-exercise/.git/COMMIT_EDITMSG"
 -'  17  0  ~/Documents/image-editing-exercise/.git/COMMIT_EDITMSG
 |4,39,17,0,1529932707,"~/Documents/image-editing-exercise/.git/COMMIT_EDITMSG"
 -'  1  0  ~/Documents/image-editing-exercise/.git/COMMIT_EDITMSG
 |4,39,1,0,1529932451,"~/Documents/image-editing-exercise/.git/COMMIT_EDITMSG"
+-'  1  0  ~/Documents/image-editing-exercise/.git/COMMIT_EDITMSG
+|4,39,1,0,1529932451,"~/Documents/image-editing-exercise/.git/COMMIT_EDITMSG"
 
 # History of marks within files (newest to oldest):
+
+> ~/.git/COMMIT_EDITMSG
+	*	1529938634	0
+	"	136	0
+	.	3	14
+	+	3	14
 
 > ~/Documents/image-editing-exercise/.git/COMMIT_EDITMSG
 	*	1529932480	0

@@ -1,0 +1,16 @@
+[2018-06-18 13:38:51.885] [main] [info] update#setState idle
+[2018-06-18 13:39:21.890] [main] [info] update#setState checking for updates
+[2018-06-18 13:39:22.221] [main] [info] update#setState idle
+[2018-06-18 14:39:41.223] [main] [info] update#setState checking for updates
+[2018-06-18 14:39:42.541] [main] [info] update#setState idle
+[2018-06-18 20:50:53.378] [main] [info] update#setState checking for updates
+[2018-06-18 20:50:53.863] [main] [info] update#setState idle
+[2018-06-19 00:26:51.746] [main] [info] update#setState checking for updates
+[2018-06-19 00:27:36.121] [main] [error] UpdateService error:  The Internet connection appears to be offline.
+[2018-06-19 00:27:36.121] [main] [info] update#setState idle
+[2018-06-19 09:57:40.555] [main] [info] update#setState checking for updates
+[2018-06-19 09:57:40.920] [main] [info] update#setState idle
+[2018-06-19 11:27:44.721] [main] [info] update#setState checking for updates
+[2018-06-19 11:27:45.542] [main] [info] update#setState idle
+[2018-06-19 13:32:05.179] [main] [info] update#setState checking for updates
+[2018-06-19 13:32:05.529] [main] [info] update#setState idle

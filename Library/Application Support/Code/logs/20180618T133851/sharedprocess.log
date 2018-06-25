@@ -1,0 +1,314 @@
+[2018-06-18 13:38:52.733] [sharedprocess] [info] main {"machineId":"4f17cd523e27e3fc569b77b0fdb79231fa2c2f345a589dd08bbad116358cc4f8"}
+[2018-06-18 13:38:52.757] [sharedprocess] [info] Scanned user extensions: 0
+[2018-06-18 13:38:52.817] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:38:54.720] [sharedprocess] [info] Scanned user extensions: 0
+[2018-06-18 13:38:54.726] [sharedprocess] [info] Scanned user extensions: 0
+[2018-06-18 13:38:54.732] [sharedprocess] [info] Scanned user extensions: 0
+[2018-06-18 13:38:54.759] [sharedprocess] [info] Scanned user extensions: 0
+[2018-06-18 13:38:54.868] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:38:54.870] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:38:54.872] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:38:57.569] [sharedprocess] [info] Scanned user extensions: 0
+[2018-06-18 13:39:32.747] [sharedprocess] [info] Starting to clean up unused language packs.
+[2018-06-18 13:39:43.917] [sharedprocess] [info] Scanned user extensions: 0
+[2018-06-18 13:39:43.920] [sharedprocess] [info] Scanned user extensions: 0
+[2018-06-18 13:39:43.922] [sharedprocess] [info] Scanned user extensions: 0
+[2018-06-18 13:39:44.006] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:39:44.008] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:40:09.472] [sharedprocess] [info] Scanned user extensions: 0
+[2018-06-18 13:40:09.477] [sharedprocess] [info] Scanned user extensions: 0
+[2018-06-18 13:40:09.491] [sharedprocess] [info] Scanned user extensions: 0
+[2018-06-18 13:40:09.590] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:40:09.593] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:40:12.077] [sharedprocess] [info] Scanned user extensions: 0
+[2018-06-18 13:44:15.293] [sharedprocess] [info] Scanned user extensions: 0
+[2018-06-18 13:44:15.296] [sharedprocess] [info] Scanned user extensions: 0
+[2018-06-18 13:44:15.299] [sharedprocess] [info] Scanned user extensions: 0
+[2018-06-18 13:44:15.398] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:44:15.400] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:45:12.094] [sharedprocess] [info] Scanned user extensions: 0
+[2018-06-18 13:48:33.390] [sharedprocess] [info] Scanned user extensions: 0
+[2018-06-18 13:48:33.427] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:48:41.166] [sharedprocess] [info] Installing extension: html-css-class-completion
+[2018-06-18 13:48:41.167] [sharedprocess] [info] Scanned user extensions: 0
+[2018-06-18 13:48:45.761] [sharedprocess] [info] Downloaded extension: html-css-class-completion
+[2018-06-18 13:48:51.318] [sharedprocess] [info] Extracted extension to /Users/nextechcatapult/.vscode/extensions/.zignd.html-css-class-completion-1.17.1: zignd.html-css-class-completion-1.17.1
+[2018-06-18 13:48:51.319] [sharedprocess] [info] Renamed to /Users/nextechcatapult/.vscode/extensions/zignd.html-css-class-completion-1.17.1
+[2018-06-18 13:48:51.319] [sharedprocess] [info] Installation completed. zignd.html-css-class-completion-1.17.1
+[2018-06-18 13:48:51.354] [sharedprocess] [info] Extensions installed successfully: zignd.html-css-class-completion
+[2018-06-18 13:48:51.499] [sharedprocess] [info] Scanned user extensions: 1
+[2018-06-18 13:48:51.554] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:50:56.430] [sharedprocess] [info] Scanned user extensions: 1
+[2018-06-18 13:50:56.430] [sharedprocess] [info] Scanned user extensions: 1
+[2018-06-18 13:50:56.434] [sharedprocess] [info] Scanned user extensions: 1
+[2018-06-18 13:50:56.450] [sharedprocess] [info] Scanned user extensions: 1
+[2018-06-18 13:50:56.536] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:50:56.539] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:50:56.546] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:50:59.010] [sharedprocess] [info] Scanned user extensions: 1
+[2018-06-18 13:50:59.578] [sharedprocess] [info] Installing extension: auto-close-tag
+[2018-06-18 13:50:59.580] [sharedprocess] [info] Scanned user extensions: 1
+[2018-06-18 13:51:00.205] [sharedprocess] [info] Downloaded extension: auto-close-tag
+[2018-06-18 13:51:00.253] [sharedprocess] [info] Extracted extension to /Users/nextechcatapult/.vscode/extensions/.formulahendry.auto-close-tag-0.5.6: formulahendry.auto-close-tag-0.5.6
+[2018-06-18 13:51:00.254] [sharedprocess] [info] Renamed to /Users/nextechcatapult/.vscode/extensions/formulahendry.auto-close-tag-0.5.6
+[2018-06-18 13:51:00.254] [sharedprocess] [info] Installation completed. formulahendry.auto-close-tag-0.5.6
+[2018-06-18 13:51:00.273] [sharedprocess] [info] Extensions installed successfully: formulahendry.auto-close-tag
+[2018-06-18 13:51:00.392] [sharedprocess] [info] Scanned user extensions: 2
+[2018-06-18 13:51:00.425] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:51:04.696] [sharedprocess] [info] Installing extension: auto-close-tag
+[2018-06-18 13:51:04.699] [sharedprocess] [info] Scanned user extensions: 2
+[2018-06-18 13:51:04.776] [sharedprocess] [info] Downloaded extension: auto-close-tag
+[2018-06-18 13:51:04.818] [sharedprocess] [info] Extracted extension to /Users/nextechcatapult/.vscode/extensions/.formulahendry.auto-close-tag-0.5.6: formulahendry.auto-close-tag-0.5.6
+[2018-06-18 13:51:04.819] [sharedprocess] [info] Rename failed. Deleting from extracted location /Users/nextechcatapult/.vscode/extensions/.formulahendry.auto-close-tag-0.5.6
+[2018-06-18 13:51:04.825] [sharedprocess] [info] Scanned user extensions: 2
+[2018-06-18 13:51:04.842] [sharedprocess] [error] Failed to install extension: formulahendry.auto-close-tag ENOTEMPTY: directory not empty, rename '/Users/nextechcatapult/.vscode/extensions/.formulahendry.auto-close-tag-0.5.6' -> '/Users/nextechcatapult/.vscode/extensions/formulahendry.auto-close-tag-0.5.6'
+[2018-06-18 13:51:04.984] [sharedprocess] [info] Scanned user extensions: 1
+[2018-06-18 13:51:05.004] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:51:28.569] [sharedprocess] [info] Scanned user extensions: 1
+[2018-06-18 13:51:28.580] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:51:31.293] [sharedprocess] [info] Installing extension: auto-rename-tag
+[2018-06-18 13:51:31.307] [sharedprocess] [info] Scanned user extensions: 1
+[2018-06-18 13:51:31.420] [sharedprocess] [info] Downloaded extension: auto-rename-tag
+[2018-06-18 13:51:31.454] [sharedprocess] [info] Extracted extension to /Users/nextechcatapult/.vscode/extensions/.formulahendry.auto-rename-tag-0.0.15: formulahendry.auto-rename-tag-0.0.15
+[2018-06-18 13:51:31.454] [sharedprocess] [info] Renamed to /Users/nextechcatapult/.vscode/extensions/formulahendry.auto-rename-tag-0.0.15
+[2018-06-18 13:51:31.454] [sharedprocess] [info] Installation completed. formulahendry.auto-rename-tag-0.0.15
+[2018-06-18 13:51:31.465] [sharedprocess] [info] Extensions installed successfully: formulahendry.auto-rename-tag
+[2018-06-18 13:51:31.605] [sharedprocess] [info] Scanned user extensions: 2
+[2018-06-18 13:51:31.644] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:51:33.006] [sharedprocess] [info] Installing extension: auto-rename-tag
+[2018-06-18 13:51:33.023] [sharedprocess] [info] Scanned user extensions: 2
+[2018-06-18 13:51:33.119] [sharedprocess] [info] Downloaded extension: auto-rename-tag
+[2018-06-18 13:51:33.160] [sharedprocess] [info] Extracted extension to /Users/nextechcatapult/.vscode/extensions/.formulahendry.auto-rename-tag-0.0.15: formulahendry.auto-rename-tag-0.0.15
+[2018-06-18 13:51:33.161] [sharedprocess] [info] Rename failed. Deleting from extracted location /Users/nextechcatapult/.vscode/extensions/.formulahendry.auto-rename-tag-0.0.15
+[2018-06-18 13:51:33.177] [sharedprocess] [info] Scanned user extensions: 2
+[2018-06-18 13:51:33.199] [sharedprocess] [error] Failed to install extension: formulahendry.auto-rename-tag ENOTEMPTY: directory not empty, rename '/Users/nextechcatapult/.vscode/extensions/.formulahendry.auto-rename-tag-0.0.15' -> '/Users/nextechcatapult/.vscode/extensions/formulahendry.auto-rename-tag-0.0.15'
+[2018-06-18 13:51:33.329] [sharedprocess] [info] Scanned user extensions: 1
+[2018-06-18 13:51:33.355] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:52:04.724] [sharedprocess] [info] Scanned user extensions: 1
+[2018-06-18 13:52:04.735] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:52:06.761] [sharedprocess] [info] Installing extension: LiveServer
+[2018-06-18 13:52:06.782] [sharedprocess] [info] Scanned user extensions: 1
+[2018-06-18 13:52:08.582] [sharedprocess] [info] Downloaded extension: LiveServer
+[2018-06-18 13:52:12.029] [sharedprocess] [info] Extracted extension to /Users/nextechcatapult/.vscode/extensions/.ritwickdey.liveserver-5.0.0: ritwickdey.liveserver-5.0.0
+[2018-06-18 13:52:12.030] [sharedprocess] [info] Renamed to /Users/nextechcatapult/.vscode/extensions/ritwickdey.liveserver-5.0.0
+[2018-06-18 13:52:12.030] [sharedprocess] [info] Installation completed. ritwickdey.liveserver-5.0.0
+[2018-06-18 13:52:12.064] [sharedprocess] [info] Extensions installed successfully: ritwickdey.liveserver
+[2018-06-18 13:52:12.199] [sharedprocess] [info] Scanned user extensions: 2
+[2018-06-18 13:52:12.227] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:53:37.024] [sharedprocess] [info] Scanned user extensions: 2
+[2018-06-18 13:53:37.049] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:56:16.140] [sharedprocess] [info] Scanned user extensions: 2
+[2018-06-18 13:56:16.182] [sharedprocess] [info] Scanned user extensions: 2
+[2018-06-18 13:56:16.231] [sharedprocess] [info] Scanned user extensions: 2
+[2018-06-18 13:56:16.262] [sharedprocess] [info] Scanned user extensions: 2
+[2018-06-18 13:56:16.264] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:56:16.270] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:56:16.275] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:56:18.718] [sharedprocess] [info] Scanned user extensions: 2
+[2018-06-18 13:56:19.923] [sharedprocess] [info] Installing extension: auto-close-tag
+[2018-06-18 13:56:19.938] [sharedprocess] [info] Scanned user extensions: 2
+[2018-06-18 13:56:20.397] [sharedprocess] [info] Downloaded extension: auto-close-tag
+[2018-06-18 13:56:20.445] [sharedprocess] [info] Removed the extension from uninstalled list: formulahendry.auto-close-tag-0.5.6
+[2018-06-18 13:56:20.455] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-18 13:56:20.456] [sharedprocess] [info] Extensions installed successfully: formulahendry.auto-close-tag
+[2018-06-18 13:56:20.584] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-18 13:56:20.611] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:56:24.794] [sharedprocess] [info] Installing extension: auto-close-tag
+[2018-06-18 13:56:24.820] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-18 13:56:24.897] [sharedprocess] [info] Downloaded extension: auto-close-tag
+[2018-06-18 13:56:24.948] [sharedprocess] [info] Extracted extension to /Users/nextechcatapult/.vscode/extensions/.formulahendry.auto-close-tag-0.5.6: formulahendry.auto-close-tag-0.5.6
+[2018-06-18 13:56:24.948] [sharedprocess] [info] Rename failed. Deleting from extracted location /Users/nextechcatapult/.vscode/extensions/.formulahendry.auto-close-tag-0.5.6
+[2018-06-18 13:56:24.969] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-18 13:56:24.989] [sharedprocess] [error] Failed to install extension: formulahendry.auto-close-tag ENOTEMPTY: directory not empty, rename '/Users/nextechcatapult/.vscode/extensions/.formulahendry.auto-close-tag-0.5.6' -> '/Users/nextechcatapult/.vscode/extensions/formulahendry.auto-close-tag-0.5.6'
+[2018-06-18 13:56:25.122] [sharedprocess] [info] Scanned user extensions: 2
+[2018-06-18 13:56:25.137] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:57:06.019] [sharedprocess] [info] Scanned user extensions: 2
+[2018-06-18 13:57:06.053] [sharedprocess] [info] Scanned user extensions: 2
+[2018-06-18 13:57:06.098] [sharedprocess] [info] Scanned user extensions: 2
+[2018-06-18 13:57:06.121] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:57:06.126] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:57:06.131] [sharedprocess] [info] Scanned user extensions: 2
+[2018-06-18 13:57:06.132] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:57:08.628] [sharedprocess] [info] Scanned user extensions: 2
+[2018-06-18 13:57:09.328] [sharedprocess] [info] Installing extension: auto-close-tag
+[2018-06-18 13:57:09.343] [sharedprocess] [info] Scanned user extensions: 2
+[2018-06-18 13:57:09.417] [sharedprocess] [info] Downloaded extension: auto-close-tag
+[2018-06-18 13:57:09.451] [sharedprocess] [info] Removed the extension from uninstalled list: formulahendry.auto-close-tag-0.5.6
+[2018-06-18 13:57:09.461] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-18 13:57:09.461] [sharedprocess] [info] Extensions installed successfully: formulahendry.auto-close-tag
+[2018-06-18 13:57:09.592] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-18 13:57:09.606] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:57:42.569] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-18 13:57:42.574] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:58:16.605] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-18 13:58:16.630] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:58:47.465] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-18 13:58:47.496] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-18 13:58:47.533] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-18 13:58:47.559] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:58:47.562] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:58:50.061] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-18 13:59:34.118] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-18 13:59:34.149] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-18 13:59:34.183] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-18 13:59:34.204] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:59:34.209] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 13:59:36.680] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-18 14:00:28.834] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-18 14:00:28.871] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-18 14:00:28.908] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-18 14:00:28.921] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 14:00:28.926] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 14:00:31.455] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-18 14:00:47.908] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-18 14:00:47.931] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-18 14:00:47.952] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 14:00:47.955] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 14:00:47.959] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-18 14:01:11.358] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-18 14:01:11.361] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 14:01:14.068] [sharedprocess] [info] Installing extension: auto-rename-tag
+[2018-06-18 14:01:14.085] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-18 14:01:14.364] [sharedprocess] [info] Downloaded extension: auto-rename-tag
+[2018-06-18 14:01:14.390] [sharedprocess] [info] Removed the extension from uninstalled list: formulahendry.auto-rename-tag-0.0.15
+[2018-06-18 14:01:14.395] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-18 14:01:14.395] [sharedprocess] [info] Extensions installed successfully: formulahendry.auto-rename-tag
+[2018-06-18 14:01:14.521] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-18 14:01:14.559] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 14:01:29.919] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-18 14:01:29.960] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 14:01:55.843] [sharedprocess] [info] Installing extension: auto-rename-tag
+[2018-06-18 14:01:55.848] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-18 14:01:55.931] [sharedprocess] [info] Downloaded extension: auto-rename-tag
+[2018-06-18 14:01:55.972] [sharedprocess] [info] Extracted extension to /Users/nextechcatapult/.vscode/extensions/.formulahendry.auto-rename-tag-0.0.15: formulahendry.auto-rename-tag-0.0.15
+[2018-06-18 14:01:55.972] [sharedprocess] [info] Rename failed. Deleting from extracted location /Users/nextechcatapult/.vscode/extensions/.formulahendry.auto-rename-tag-0.0.15
+[2018-06-18 14:01:55.981] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-18 14:01:55.996] [sharedprocess] [error] Failed to install extension: formulahendry.auto-rename-tag ENOTEMPTY: directory not empty, rename '/Users/nextechcatapult/.vscode/extensions/.formulahendry.auto-rename-tag-0.0.15' -> '/Users/nextechcatapult/.vscode/extensions/formulahendry.auto-rename-tag-0.0.15'
+[2018-06-18 14:01:56.150] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-18 14:01:56.161] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 14:02:10.520] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-18 14:02:10.557] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-18 14:02:10.601] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-18 14:02:10.630] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-18 14:02:10.634] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 14:02:10.638] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 14:02:10.645] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 14:02:12.152] [sharedprocess] [info] Installing extension: auto-rename-tag
+[2018-06-18 14:02:12.168] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-18 14:02:12.235] [sharedprocess] [info] Downloaded extension: auto-rename-tag
+[2018-06-18 14:02:12.264] [sharedprocess] [info] Removed the extension from uninstalled list: formulahendry.auto-rename-tag-0.0.15
+[2018-06-18 14:02:12.269] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-18 14:02:12.269] [sharedprocess] [info] Extensions installed successfully: formulahendry.auto-rename-tag
+[2018-06-18 14:02:12.391] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-18 14:02:12.424] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 14:02:13.067] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-18 14:02:13.674] [sharedprocess] [info] Installing extension: auto-rename-tag
+[2018-06-18 14:02:13.681] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-18 14:02:13.761] [sharedprocess] [info] Downloaded extension: auto-rename-tag
+[2018-06-18 14:02:13.802] [sharedprocess] [info] Extracted extension to /Users/nextechcatapult/.vscode/extensions/.formulahendry.auto-rename-tag-0.0.15: formulahendry.auto-rename-tag-0.0.15
+[2018-06-18 14:02:13.803] [sharedprocess] [info] Rename failed. Deleting from extracted location /Users/nextechcatapult/.vscode/extensions/.formulahendry.auto-rename-tag-0.0.15
+[2018-06-18 14:02:13.809] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-18 14:02:13.822] [sharedprocess] [error] Failed to install extension: formulahendry.auto-rename-tag ENOTEMPTY: directory not empty, rename '/Users/nextechcatapult/.vscode/extensions/.formulahendry.auto-rename-tag-0.0.15' -> '/Users/nextechcatapult/.vscode/extensions/formulahendry.auto-rename-tag-0.0.15'
+[2018-06-18 14:02:13.959] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-18 14:02:13.987] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 14:02:17.421] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-18 14:02:17.439] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-18 14:02:17.457] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-18 14:02:17.465] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 14:02:17.467] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 14:02:20.263] [sharedprocess] [info] Installing extension: auto-rename-tag
+[2018-06-18 14:02:20.278] [sharedprocess] [info] Scanned user extensions: 3
+[2018-06-18 14:02:20.347] [sharedprocess] [info] Downloaded extension: auto-rename-tag
+[2018-06-18 14:02:20.362] [sharedprocess] [info] Removed the extension from uninstalled list: formulahendry.auto-rename-tag-0.0.15
+[2018-06-18 14:02:20.366] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-18 14:02:20.366] [sharedprocess] [info] Extensions installed successfully: formulahendry.auto-rename-tag
+[2018-06-18 14:02:20.488] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-18 14:02:20.514] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 14:02:30.438] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-18 14:02:30.440] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-18 14:02:30.455] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-18 14:02:30.465] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-18 14:02:30.608] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 14:02:30.612] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 14:02:30.615] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 14:02:33.030] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-18 14:02:33.189] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-18 14:02:33.195] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-18 14:02:33.197] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-18 14:02:33.256] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 14:02:33.259] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 14:07:33.079] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-18 14:12:52.251] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-18 14:17:52.270] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-18 14:22:52.290] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-18 14:27:52.320] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-18 14:32:52.452] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-18 14:37:52.473] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-18 14:42:52.493] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-18 21:05:28.943] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-18 21:05:28.944] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-18 21:05:28.946] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-18 21:05:29.182] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 21:05:29.187] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-18 21:05:31.337] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 09:18:05.168] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 09:18:05.172] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 09:18:05.188] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 09:18:05.309] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-19 09:18:05.320] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-19 09:18:07.691] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 09:25:13.410] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 09:25:13.411] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 09:25:13.421] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 09:25:13.500] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-19 09:25:13.509] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-19 09:25:16.027] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 09:30:16.032] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 09:35:16.038] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 09:40:16.153] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 09:45:16.176] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 09:50:16.195] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 10:44:12.288] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 10:44:12.290] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 10:44:12.292] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 10:44:12.395] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-19 10:44:12.400] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-19 10:44:14.822] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 11:18:17.307] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 11:18:17.308] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 11:18:17.309] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 11:18:17.394] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-19 11:18:17.399] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-19 11:18:19.906] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 11:23:19.966] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 11:28:19.995] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 13:02:23.808] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 13:02:23.810] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 13:02:23.811] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 13:02:23.927] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-19 13:02:23.935] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-19 13:02:26.425] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 13:21:22.256] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 13:21:22.260] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 13:21:22.271] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 13:21:22.355] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-19 13:21:22.360] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-19 13:21:24.850] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 13:26:24.881] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 13:31:24.901] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 13:36:24.922] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 13:41:24.968] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 13:46:24.989] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 13:51:25.016] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 13:56:25.037] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 14:01:25.059] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 14:06:25.665] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 14:11:25.695] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 14:16:25.715] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 14:19:21.831] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 14:19:21.833] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 14:19:21.835] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 14:19:21.973] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-19 14:19:21.979] [sharedprocess] [info] Scanned system extensions: 70
+[2018-06-19 14:19:24.406] [sharedprocess] [info] Scanned user extensions: 4
+[2018-06-19 14:21:25.733] [sharedprocess] [info] Scanned user extensions: 4

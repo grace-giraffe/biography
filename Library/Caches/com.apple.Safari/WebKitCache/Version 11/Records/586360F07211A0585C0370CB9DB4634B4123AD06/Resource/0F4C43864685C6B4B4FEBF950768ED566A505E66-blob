@@ -1,0 +1,314 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html style="display:none !important;"><head><script src="/static/111213/js/perf/stub.js" type="text/javascript"></script><script src="/faces/a4j/g/3_3_3.Finalorg.ajax4jsf.javascript.AjaxScript" type="text/javascript"></script><script src="/static/111213/js/functions.js" type="text/javascript"></script><script src="/jslibrary/1524076052000/sfdc/main.js" type="text/javascript"></script><script src="/jslibrary/jslabels/1528145682000/en_US.js" type="text/javascript"></script><script src="/static/111213/desktop/desktopAjax.js" type="text/javascript"></script><script src="/static/111213/js/picklist4.js" type="text/javascript"></script><script src="/resource/1408931732000/jQuery" type="text/javascript"></script><script src="/resource/1409275447000/jQuery_UI" type="text/javascript"></script><script src="/resource/1415760842000/Bootstrap/visualforce-bootstrap-master/js/bootstrap-modal.js" type="text/javascript"></script><script src="/resource/1416016249000/jQuery_Mask/jquery.inputmask.js" type="text/javascript"></script><script src="/resource/1443611105000/AdmissionsScript" type="text/javascript"></script><script src="/jslibrary/1510694034000/sfdc/VFState.js" type="text/javascript"></script><link class="user" href="/sCSS/42.0/sprites/1524611956000/Theme3/default/sf/zen-componentsCompatible.css" rel="stylesheet" type="text/css" /><link class="user" href="/sCSS/42.0/sprites/1524611956000/Theme3/default/sf/elements.css" rel="stylesheet" type="text/css" /><link class="user" href="/sCSS/42.0/sprites/1524611956000/Theme3/default/sf/common.css" rel="stylesheet" type="text/css" /><link class="user" href="/sCSS/42.0/sprites/1523340038000/Theme3/sf/dStandard.css" rel="stylesheet" type="text/css" /><link class="user" href="/sCSS/42.0/sprites/1523340038000/Theme3/00D50000000BOEu/00550000003Xhg9/sf/dCustom0.css" rel="stylesheet" type="text/css" /><link class="user" href="/sCSS/42.0/sprites/1524611956000/Theme3/default/sf/extended.css" rel="stylesheet" type="text/css" /><link class="user" href="/sCSS/42.0/sprites/1524611956000/Theme3/default/sf/setup.css" rel="stylesheet" type="text/css" /><link class="user" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" /><link class="user" href="/resource/1415760842000/Bootstrap/visualforce-bootstrap-master/css/bootstrap-visualforce.css" rel="stylesheet" type="text/css" /><link class="user" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" /><link class="user" href="/resource/1505524409000/AdmissionsStyle" rel="stylesheet" type="text/css" /><script type="text/javascript">
+//<![CDATA[
+try{(function(){var w=self,l,p,o;if(w&&top){for(;w!==top&&(p=w.parent)&&p!==w&&(o=p.location)&&o.protocol===(l=w.location).protocol&&(o.host===l.host||(p.document&&p.document.domain===w.document.domain));w=p);if(w!==top)throw "";}({f:function(){document.documentElement?document.documentElement.style.display="":(!this.a&&(this.a=10),this.a<1E5&&(window.sfdcRetryShowWindow=this)&&setTimeout("sfdcRetryShowWindow.f()",this.a),this.a*=2)}}.f())})();}catch(e){if(top!==self)top.location=location;else throw e;}//]]></script></head><body>
+	
+	<meta charset="utf-8" />
+	<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<title>Ivy Tech Admission Application</title>
+	
+	<style>
+		@media screen and (max-width: 767px) {
+		  .large-screen {
+		    display: none !important;
+		  }
+		}
+		@media screen and (min-width: 768px) {
+		  .small-screen {
+		    display: none !important;
+		  }
+		}	
+		@media print and (max-width: 500px) {
+		  .large-screen {
+		    display: none !important;
+		  }
+		}
+		@media print and (min-width: 501px) {
+		  .small-screen {
+		    display: none !important;
+		  }
+		}	
+		@media print and (device-width: 320px) {
+		  .large-screen {
+		    display: none !important;
+		  }		
+		}
+	</style>	
+
+    
+    
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]--><span id="j_id0:pgTemplate:j_id13"><span id="j_id0:pgTemplate:j_id13:j_id14:j_id15">
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+         document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script>
+    try {
+          var pageTracker = _gat._getTracker("UA-54932748-1");
+
+          pageTracker._setCookiePath("/");
+        pageTracker._trackPageview();
+     }
+     catch(err) {
+     }
+    </script></span></span>
+
+	<div id="force">
+	
+		<div class="container"><span id="j_id0:pgTemplate:j_id20">
+
+    <div class="ui-widget-overlay ui-front" id="loadingDiv" style="display:none;"></div><div id="j_id0:pgTemplate:j_id20:j_id21:j_id23" class="pageStatus"><span id="j_id0:pgTemplate:j_id20:j_id21:pageStatus"><span id="j_id0:pgTemplate:j_id20:j_id21:pageStatus.start" style="display: none"><img src="/img/loading32.gif" /></span><script type="text/javascript">
+window.document.getElementById('j_id0:pgTemplate:j_id20:j_id21:pageStatus.start').onstart=function(){admissions.showLoadingOverlay();;};
+</script><span id="j_id0:pgTemplate:j_id20:j_id21:pageStatus.stop"></span><script type="text/javascript">
+window.document.getElementById('j_id0:pgTemplate:j_id20:j_id21:pageStatus.stop').onstop=function(){admissions.hideLoadingOverlay();;};
+</script></span></div></span>
+				
+		    <div class="row" id="navHeader">
+		        <div class="col-xs-12">
+		            <img alt="ivy tech logo" class="img-responsive" src="/resource/1505524409000/AdmissionsImages/graphics/banner-logo.png" />
+		            <br />
+		            
+		            <div class="large-screen" id="largeScreenNavigation"><img src="/resource/1505524409000/AdmissionsImages/graphics/progress/personal-info.png" class="img-responsive" />
+	            	</div>
+
+		            <div class="small-screen" id="smallScreenNavigation">
+		            	<h3>Step 1 of 10 - Personal Information</h3>
+	            	</div>	
+	            	
+		            <div style="margin-top:10px; border-bottom: solid medium #41AD49;"></div>
+		        </div>
+		    </div><span id="j_id0:pgTemplate:messages"></span>
+<form id="j_id0:pgTemplate:frm" name="j_id0:pgTemplate:frm" method="post" action="/Admissions_Personal_Information" enctype="application/x-www-form-urlencoded" autocomplete="false">
+<input type="hidden" name="j_id0:pgTemplate:frm" value="j_id0:pgTemplate:frm" />
+<script id="j_id0:pgTemplate:frm:j_id54" type="text/javascript">rerenderSSN=function(){A4J.AJAX.Submit('j_id0:pgTemplate:frm',null,{'similarityGroupingId':'j_id0:pgTemplate:frm:j_id54','oncomplete':function(request,event,data){admissions.afterRerender();},'parameters':{'j_id0:pgTemplate:frm:j_id54':'j_id0:pgTemplate:frm:j_id54'} ,'status':'j_id0:pgTemplate:j_id20:j_id21:pageStatus'} )};
+</script>
+
+                <div class="row" style="padding-top:20px;">
+                    <div class="col-xs-12">
+                        <p style="font-size: 18px;"><p><span style="color: black;">This free application should take less than 15 minutes to complete. After that, you should be hearing from us within 10 business days.<br><br>Please navigate using the “Continue” and “Previous” buttons. To be assessed for placement now, enter your SAT, ACT and PSAT scores, as well as your high school or college transcript. If you wish to be assessed later, you may leave those fields blank. We can accept documents in the .doc, .docx, .jpg., .jpeg, .pdf, .png., .tif, and .tiff formats. If you have applied to Ivy Tech within the last two years, you do not need to re-apply. Applicants may view our <a href="https://www.ivytech.edu/assessment/index.html" target="_blank">Minimum Assessment Requirements here</a>. Please visit the admissions office on your <a href="https://www.ivytech.edu/index.html#locations" target="_blank">campus</a> for more information about enrolling. </span><br> </p>
+                        </p>
+                    </div>
+                </div>
+            
+                <div class="row" style="padding-top:20px;">
+                
+                    <div class="col-xs-12">  
+                    
+                        <h3>Personal Information</h3>
+                        <br />                                 
+                        <br />                    
+                        <fieldset>
+                        
+                            <legend>Legal Name
+                                <span class="ivy-tooltip" data-toggle="tooltip" id="legalName" title="Your legal name is how your name appears on your driver&#8217;s license, tax documents, social security card and other official documents. Please do not use nicknames, abbreviated names or initials."><i class="fa fa-question"></i>
+                                </span>
+                            </legend>
+                                          
+                            <span class="help-block">Please use your legal name, as this is the name which will appear on your official college record, transcripts and diploma when you graduate. Please use proper capitalization.
+                            </span>
+                                                                               
+                            <div class="form-group required">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                        <label class="control-label">First Name</label><input type="text" name="j_id0:pgTemplate:frm:j_id74" class="input-lg form-control" maxlength="60" />
+                                    </div>
+                                </div>
+                            </div>                        
+        
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                        <label class="control-label">Middle Name</label><input type="text" name="j_id0:pgTemplate:frm:j_id76" class="input-lg form-control" maxlength="60" />
+                                    </div>
+                                </div>
+                            </div>     
+                               
+                            <div class="form-group required">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                        <label class="control-label">Last Name/Surname</label><input type="text" name="j_id0:pgTemplate:frm:j_id78" class="input-lg form-control" maxlength="60" />
+                                    </div>
+                                </div>
+                            </div>           
+                            
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                        <label class="control-label">Suffix (if applicable)</label><script> if(!window.sfdcPage) { window.sfdcPage = new ApexDetailPage(); }UserContext.initialize({"ampm":["AM","PM"],"isAccessibleMode":false,"uiSkin":"Theme3","salesforceURL":"https://ivytechadmissions.secure.force.com?refURL=http%3A%2F%2Fivytechadmissions.secure.force.com%2F","dateFormat":"M/d/yyyy","language":"en_US","locale":"en_US","userName":"admission@ivytechadmissions.force.com","userId":"00550000003Xhg9","isCurrentlySysAdminSU":false,"renderMode":"RETRO","startOfWeek":"1","vfDomainPattern":"(?:[^.]+).na3.visual.force.com","auraDomain":"na3.lightning.force.com","dateTimeFormat":"M/d/yyyy h:mm a","orgPreferences":[{"index":257,"name":"TabOrganizer","value":true},{"index":113,"name":"GroupTasks","value":true}],"isDefaultNetwork":true,"labelLastModified":"1528145682000","today":"6/8/2018 8:51 PM","timeFormat":"h:mm a","userPreferences":[{"index":112,"name":"HideInlineEditSplash","value":false},{"index":114,"name":"OverrideTaskSendNotification","value":false},{"index":115,"name":"DefaultTaskSendNotification","value":false},{"index":119,"name":"HideUserLayoutStdFieldInfo","value":false},{"index":116,"name":"HideRPPWarning","value":false},{"index":87,"name":"HideInlineSchedulingSplash","value":false},{"index":88,"name":"HideCRUCNotification","value":false},{"index":89,"name":"HideNewPLESplash","value":false},{"index":90,"name":"HideNewPLEWarnIE6","value":false},{"index":122,"name":"HideOverrideSharingMessage","value":false},{"index":91,"name":"HideProfileILEWarn","value":false},{"index":93,"name":"HideProfileElvVideo","value":false},{"index":97,"name":"ShowPicklistEditSplash","value":false},{"index":92,"name":"HideDataCategorySplash","value":false},{"index":128,"name":"ShowDealView","value":false},{"index":129,"name":"HideDealViewGuidedTour","value":false},{"index":132,"name":"HideKnowledgeFirstTimeSetupMsg","value":false},{"index":104,"name":"DefaultOffEntityPermsMsg","value":false},{"index":135,"name":"HideNewCsnSplash","value":false},{"index":101,"name":"HideBrowserWarning","value":false},{"index":139,"name":"HideDashboardBuilderGuidedTour","value":false},{"index":140,"name":"HideSchedulingGuidedTour","value":false},{"index":180,"name":"HideReportBuilderGuidedTour","value":false},{"index":183,"name":"HideAssociationQueueCallout","value":false},{"index":194,"name":"HideQTEBanner","value":false},{"index":193,"name":"HideChatterOnboardingSplash","value":false},{"index":195,"name":"HideSecondChatterOnboardingSplash","value":false},{"index":270,"name":"HideIDEGuidedTour","value":false},{"index":282,"name":"HideQueryToolGuidedTour","value":false},{"index":196,"name":"HideCSIGuidedTour","value":false},{"index":271,"name":"HideFewmetGuidedTour","value":false},{"index":272,"name":"HideEditorGuidedTour","value":false},{"index":205,"name":"HideApexTestGuidedTour","value":false},{"index":206,"name":"HideSetupProfileHeaderTour","value":false},{"index":207,"name":"HideSetupProfileObjectsAndTabsTour","value":false},{"index":213,"name":"DefaultOffArticleTypeEntityPermMsg","value":false},{"index":214,"name":"HideSelfInfluenceGetStarted","value":false},{"index":215,"name":"HideOtherInfluenceGetStarted","value":false},{"index":216,"name":"HideFeedToggleGuidedTour","value":false},{"index":268,"name":"ShowChatterTab178GuidedTour","value":false},{"index":275,"name":"HidePeopleTabDeprecationMsg","value":false},{"index":276,"name":"HideGroupTabDeprecationMsg","value":false},{"index":224,"name":"HideUnifiedSearchGuidedTour","value":false},{"index":226,"name":"ShowDevContextMenu","value":false},{"index":227,"name":"HideWhatRecommenderForActivityQueues","value":false},{"index":228,"name":"HideLiveAgentFirstTimeSetupMsg","value":false},{"index":232,"name":"HideGroupAllowsGuestsMsgOnMemberWidget","value":false},{"index":233,"name":"HideGroupAllowsGuestsMsg","value":false},{"index":234,"name":"HideWhatAreGuestsMsg","value":false},{"index":235,"name":"HideNowAllowGuestsMsg","value":false},{"index":236,"name":"HideSocialAccountsAndContactsGuidedTour","value":false},{"index":237,"name":"HideAnalyticsHomeGuidedTour","value":false},{"index":238,"name":"ShowQuickCreateGuidedTour","value":false},{"index":245,"name":"HideFilePageGuidedTour","value":false},{"index":250,"name":"HideForecastingGuidedTour","value":false},{"index":251,"name":"HideBucketFieldGuide","value":false},{"index":263,"name":"HideSmartSearchCallOut","value":false},{"index":265,"name":"HideSocialProfilesKloutSplashScreen","value":false},{"index":273,"name":"ShowForecastingQuotaAttainment","value":false},{"index":280,"name":"HideForecastingQuotaColumn","value":false},{"index":301,"name":"HideManyWhoGuidedTour","value":false},{"index":298,"name":"HideFileSyncBannerMsg","value":false},{"index":299,"name":"HideTestConsoleGuidedTour","value":false},{"index":302,"name":"HideManyWhoInlineEditTip","value":false},{"index":303,"name":"HideSetupV2WelcomeMessage","value":false},{"index":312,"name":"ForecastingShowQuantity","value":false},{"index":313,"name":"HideDataImporterIntroMsg","value":false},{"index":314,"name":"HideEnvironmentHubLightbox","value":false},{"index":316,"name":"HideSetupV2GuidedTour","value":false},{"index":317,"name":"HideFileSyncMobileDownloadDialog","value":false},{"index":322,"name":"HideEnhancedProfileHelpBubble","value":false},{"index":328,"name":"ForecastingHideZeroRows","value":false},{"index":330,"name":"HideEmbeddedComponentsFeatureCallout","value":false},{"index":341,"name":"HideDedupeMatchResultCallout","value":false},{"index":340,"name":"HideS1BrowserUI","value":true},{"index":346,"name":"HideS1Banner","value":false},{"index":358,"name":"HideEmailVerificationAlert","value":false},{"index":354,"name":"HideLearningPathModal","value":false},{"index":359,"name":"HideAtMentionsHelpBubble","value":false},{"index":368,"name":"LightningExperiencePreferred","value":false}],"networkId":""});
+</script><select  class="input-lg form-control" id="j_id0:pgTemplate:frm:j_id80" name="j_id0:pgTemplate:frm:j_id80"><option value="">--None--</option><option value="Jr">Jr</option>
+<option value="Sr">Sr</option>
+<option value="II">II</option>
+<option value="III">III</option>
+<option value="IV">IV</option>
+</select>
+                                    </div>
+                                </div>
+                            </div>                                   
+        
+                        </fieldset>
+      
+                        <fieldset class="required">
+                            <legend>Birthdate</legend>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"><input id="j_id0:pgTemplate:frm:birthdateInput" type="text" name="j_id0:pgTemplate:frm:birthdateInput" class="datepickerBD dateMask input-lg form-control" /><span class="dateInput dateOnlyInput"><input  id="j_id0:pgTemplate:frm:birthdate" name="j_id0:pgTemplate:frm:birthdate" onfocus="DatePicker.pickDate(true, 'j_id0:pgTemplate:frm:birthdate', false);" size="12" style="display:none;" type="text" /><span class="dateFormat">[&nbsp;<a href="javascript:DatePicker.insertDate('6/8/2018', 'j_id0:pgTemplate:frm:birthdate', true);">6/8/2018</a>&nbsp;]</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>          
+
+                        <fieldset class="required">
+                            <legend>Citizenship
+                                <span class="ivy-tooltip" data-toggle="tooltip" href="#" id="citizenship" title="A U.S. Citizen is someone who was born in the United States or has been granted citizenship through the U.S. naturalization process.
+A Permanent resident is someone who is legally in the United States as demonstrated by possession of a Green Card.
+Deferred Action for Childhood Arrival Students (DACA) are students who have completed the process and are in the country under this status.
+An international student is someone seeking admission to the college who resides in a country/province outside of the United States."><i class="fa fa-question"></i></span>                         
+                            </legend>
+                            
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6"><fieldset style="border: none;"><table role="presentation" id="j_id0:pgTemplate:frm:citizenship">
+	<tr>
+<td>
+<input type="radio" name="j_id0:pgTemplate:frm:citizenship" id="j_id0:pgTemplate:frm:citizenship:0" value="2" /><label for="j_id0:pgTemplate:frm:citizenship:0"> U.S. Citizen</label></td>
+	</tr>
+	<tr>
+<td>
+<input type="radio" name="j_id0:pgTemplate:frm:citizenship" id="j_id0:pgTemplate:frm:citizenship:1" value="1" /><label for="j_id0:pgTemplate:frm:citizenship:1"> International Student</label></td>
+	</tr>
+	<tr>
+<td>
+<input type="radio" name="j_id0:pgTemplate:frm:citizenship" id="j_id0:pgTemplate:frm:citizenship:2" value="3" /><label for="j_id0:pgTemplate:frm:citizenship:2"> Permanent Resident (Green Card) Deferred Action Students (DACA)</label></td>
+	</tr>
+</table></fieldset>                                    
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </fieldset>                                                                                     
+
+                        <fieldset class="required" style="">
+                            <legend>Are you a resident of Indiana?
+                            </legend>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4"><select  class="input-lg form-control" id="j_id0:pgTemplate:frm:j_id88" name="j_id0:pgTemplate:frm:j_id88"><option value="">--None--</option><option value="Y">Yes</option>
+<option value="N">No</option>
+</select>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>        
+
+                        <fieldset class="required" style="">
+                            <legend>Social Security Number</legend>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                                    <div class="form-group">
+                                        <span class="help-block">"No spaces or dashes. Numbers only."</span>
+                                        <span class="help-block">If you do not have a social security number, please contact your regional <a href="http://ivytech.edu/admissions/contacts.html" target="_blank">Admissions Office</a>   
+                                        </span>                                      
+                                        <br /><input  class="input-lg form-control" id="j_id0:pgTemplate:frm:ssnInput" maxlength="255" name="j_id0:pgTemplate:frm:ssnInput" size="20" type="text" /><script>new EncryptedTextInputElement('j_id0:pgTemplate:frm:ssnInput', 9, true)</script>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+<script type="text/javascript" language="Javascript">function dpf(f) {var adp = f.adp;if (adp != null) {for (var i = 0;i < adp.length;i++) {adp[i].parentNode.removeChild(adp[i]);}}};function apf(f, pvp) {var adp = new Array();f.adp = adp;var ps = pvp.split(',');for (var i = 0,ii = 0;i < ps.length;i++,ii++) {var p = document.createElement("input");p.type = "hidden";p.name = ps[i];p.value = ps[i + 1];f.appendChild(p);adp[ii] = p;i += 1;}};function jsfcljs(f, pvp, t) {apf(f, pvp);var ft = f.target;if (t) {f.target = t;}f.submit();f.target = ft;dpf(f);};</script>
+<a id="j_id0:pgTemplate:frm:continueButton" href="#" style="margin-bottom:30px" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('j_id0:pgTemplate:frm'),'j_id0:pgTemplate:frm:continueButton,j_id0:pgTemplate:frm:continueButton','');}return false" class="pull-right btn btn-primary btn-lg">
+                            Continue <i class="fa fa-chevron-right"></i></a>
+    
+                    </div>
+                
+                </div><div id="j_id0:pgTemplate:frm:j_id98"></div>
+</form><span id="ajax-view-state-page-container" style="display: none"><span id="ajax-view-state" style="display: none"><input type="hidden"  id="com.salesforce.visualforce.ViewState" name="com.salesforce.visualforce.ViewState" value="i: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" /><input type="hidden"  id="com.salesforce.visualforce.ViewStateVersion" name="com.salesforce.visualforce.ViewStateVersion" value="201806041959160965" /><input type="hidden"  id="com.salesforce.visualforce.ViewStateMAC" name="com.salesforce.visualforce.ViewStateMAC" value="AGV5SnViMjVqWlNJNklrMDNSMG81UVZBMVQzUTFaalJRTWtSSWFuUmZNR1l6Y0hoUGVUZ3RhVlJQU0c1SVRIRklka1JSYVRoY2RUQXdNMlFpTENKMGVYQWlPaUpLVjFRaUxDSmhiR2NpT2lKSVV6STFOaUlzSW10cFpDSTZJbnRjSW5SY0lqcGNJakF3UkRVd01EQXdNREF3UWs5RmRWd2lMRndpZGx3aU9sd2lNREpITlRBd01EQXdNREE0WjNob1hDSXNYQ0poWENJNlhDSjJabk5wWjI1cGJtZHJaWGxjSWl4Y0luVmNJanBjSWpBd05UVXdNREF3TURBeldHaG5PVndpZlNJc0ltTnlhWFFpT2xzaWFXRjBJbDBzSW1saGRDSTZNVFV5T0RVd05UUTNNamt4TkN3aVpYaHdJam93ZlE9PS4uVmFfYVZ4NkhDNEJPNHEtVlpBMm1adnFWUWszNFlDaU5teTFqQnpBaHBmWT0=" /></span></span>
+            
+            <script>
+                (function () {
+                    $(document).ready(function () {
+                        var localStorage = window.localStorage;
+                        var search = window.location.search;
+                        // Purge out query parameters from past applications.
+                        localStorage.removeItem("ivyTrackingQueryParams");
+                        // If query parameter were passed to the URL, 
+                        // squirrel them away in localStorage.
+                        if (search.length > 1) {
+                            var queryString = search.slice(1);
+                            localStorage.setItem("ivyTrackingQueryParams", queryString);
+                        }
+                    });
+                })();
+            </script>
+	    	
+    	</div>
+
+	</div>
+
+	<script>
+  var AJQ = jQuery.noConflict();
+  
+  AJQ( document ).ready(function(){
+   admissions.onPageReady(); 
+  }); 
+  
+  admissions.addTitleOnClick = function(){
+   
+   AJQ('#legalName').bind("click", function() {
+    alert("Your legal name is how your name appears on your driver’s license, tax documents, social security card and other official documents. Please do not use nicknames, abbreviated names or initials.");
+   });
+   
+   AJQ('#citizenship').bind("click", function() {
+    alert("A U.S. Citizen is someone who was born in the United States or has been granted citizenship through the U.S. naturalization process.\nA Permanent resident is someone who is legally in the United States as demonstrated by possession of a Green Card.\nDeferred Action for Childhood Arrival Students (DACA) are students who have completed the process and are in the country under this status.\nAn international student is someone seeking admission to the college who resides in a country/province outside of the United States.");
+   });
+   
+   AJQ('#program').bind("click", function() {
+    alert("Certificates are sequences of technical and professional courses that are industry focused and designed for workforce preparation. The Associate of Science degree is a two year college degree focused on students wishing to transfer to a 4-year institution. An Associate of Applied Science degree is a vocational/technical program degree meant for the student to go out into the workforce after completion.");
+   });   
+
+   AJQ('#desiredProgram').bind("click", function() {
+    alert("A program listed “via DE” means this program is available as a Distance Education (DE) program with all coursework being completed online.");
+   });        
+  }
+  
+  admissions.validatePage = function(){
+
+   if ('true' == 'true' && '1' == '1'){
+    AJQ("#navHeader").toggle();
+    alert("You must start the application from the beginning.  You will now be redirected to beginning of the application process.");
+    window.location = '/Admissions_Personal_Information';
+   }
+  }   
+ </script><script type="text/javascript">Sfdc.onReady(function(){
+	SfdcApp && SfdcApp.Visualforce && SfdcApp.Visualforce.VSManager && SfdcApp.Visualforce.VSManager.vfPrepareForms(["j_id0:pgTemplate:frm"]);
+
+});</script><div class="datePicker" id="datePicker"><div class="dateBar"><img src="/img/s.gif" alt="Previous Month"  class="calLeft" onblur="this.className = 'calLeft';" onclick="DatePicker.datePicker.prevMonth();" onfocus="this.className = 'calLeftOn';" onmouseout="this.className = 'calLeft';" onmouseover="this.className = 'calLeftOn';" title="Previous Month"/><select  id="calMonthPicker" name="calMonthPicker" title="Month"><option value="0">January</option>
+<option value="1">February</option>
+<option value="2">March</option>
+<option value="3">April</option>
+<option value="4">May</option>
+<option value="5">June</option>
+<option value="6">July</option>
+<option value="7">August</option>
+<option value="8">September</option>
+<option value="9">October</option>
+<option value="10">November</option>
+<option value="11">December</option>
+</select><img src="/img/s.gif" alt="Next Month"  class="calRight" onblur="this.className = 'calRight';" onclick="DatePicker.datePicker.nextMonth();" onfocus="this.className = 'calRightOn';" onmouseout="this.className = 'calRight';" onmouseover="this.className = 'calRightOn';" title="Next Month"/><select  id="calYearPicker" name="calYearPicker" title="Year"><option value="2017">2017</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+<option value="2020">2020</option>
+<option value="2021">2021</option>
+<option value="2022">2022</option>
+<option value="2023">2023</option>
+</select></div><div class="calBody"><table  class="calDays" border="0" cellpadding="0" cellspacing="0" id="datePickerCalendar"><tr><TH class="dayOfWeek" scope="col">Sun</TH><TH class="dayOfWeek" scope="col">Mon</TH><TH class="dayOfWeek" scope="col">Tue</TH><TH class="dayOfWeek" scope="col">Wed</TH><TH class="dayOfWeek" scope="col">Thu</TH><TH class="dayOfWeek" scope="col">Fri</TH><TH class="dayOfWeek" scope="col">Sat</TH></tr>
+<tr class="calRow" id="calRow1"><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td></tr>
+<tr class="calRow" id="calRow2"><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td></tr>
+<tr class="calRow" id="calRow3"><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td></tr>
+<tr class="calRow" id="calRow4"><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td></tr>
+<tr class="calRow" id="calRow5"><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td></tr>
+<tr class="calRow" id="calRow6"><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td><td onblur="hiOff(this);" onclick="DatePicker.datePicker.selectDate(this);" onfocus="hiOn(this);" onmouseout="hiOff(this);" onmouseover="hiOn(this);">&nbsp;</td></tr>
+</table><div class="buttonBar"><a href="javascript:%20void%280%29%3B" class="calToday" onclick="DatePicker.datePicker.selectDate('today');return false;">Today</a></div></div></div></body></html>

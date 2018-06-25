@@ -1,0 +1,1230 @@
+
+var HRBAPP = HRBAPP || {};
+HRBAPP.seg2 = angular.module('seg2', ['ui.router']);
+HRBAPP.seg2.run(function($rootScope,$state, $location) {
+    HRBAPP.seg2.corsServiceDomain = HRBAPP.seg2.client.sourceDomain;
+});
+
+HRBAPP.seg2.controller("TaxProGoController", function(TaxProGoDefaultData, TaxProGoFactory, $rootScope, $scope, $timeout, $http, $location, $state, $q){
+
+    $scope.initiateData = function(){
+        var factoryData = TaxProGoFactory.getData();
+        $scope.temp = factoryData.temp;
+        $scope.udata = factoryData.udata;
+        $scope.taxRequestDetails = factoryData.taxRequestDetails;
+        $scope.udata.uo = factoryData.udata.userSelections;
+        $scope.udata.statesselected = factoryData.udata.statesselected;
+        $scope.nav = factoryData.nav;
+        $scope.stateNameLists = factoryData.stateNameLists;
+        $scope.expertiseDescription = factoryData.expertiseDescription;
+
+        if($(window).width() < 656){
+            $scope.temp.mobileMenuExpanded = false;
+        }
+
+        if( $(window).width() > 656 && $(window).width() < 976){
+            $scope.temp.paginate.range = 3;
+        }
+
+        if(!$scope.udata.statesselected.length ){
+            $state.go('tpg-selections');
+        }
+    }
+
+    $scope.initiateData();
+
+    // Support Phone number DTM tracking
+    $scope.phoneNumberTrack = function() {
+        // track for mobile only
+        if($(window).width() < 767)
+        {
+            try {
+                var dialedNum = "855-279-1752";
+                HRBData.digital_data.loc = "b";
+                HRBData.digital_data.nm = "phone number click";
+                HRBData.digital_data.office_phone_number = dialedNum;
+                _satellite.track("click_to_call_opened");
+                console.log("DTM: Call rule click_to_call_opened");
+            } catch (e)
+            {
+                console.log("DTM: Call rule click : Error " + e);
+            }
+        }
+    }
+
+    // sending user selected values to DTM
+    $scope.omniresults = function(payload) {
+        var numberofStates = "";
+        numberofStates = payload.numberOfStates;
+        var totoalPrice = "";
+        totoalPrice = payload.taxPrepInfo.priceTotal;
+        var userOptions = "";
+        userOptions = payload.userSelections.single == true ? userOptions.concat("s").concat(","):userOptions.concat("");
+        userOptions = payload.userSelections.married == true ? userOptions.concat("m").concat(","):userOptions.concat("");
+        userOptions = payload.userSelections.havechildren == true ? userOptions.concat("dep").concat(","):userOptions.concat("");
+        userOptions = payload.userSelections.ownsHome == true ? userOptions.concat("hm").concat(","):userOptions.concat("");
+        userOptions = payload.userSelections.hasJob == true ? userOptions.concat("j").concat(","):userOptions.concat("");
+        userOptions = payload.userSelections.isSelfEmployed == true ? userOptions.concat("emp").concat(","):userOptions.concat("");
+        userOptions = payload.userSelections.ownsBusiness == true ? userOptions.concat("bus").concat(","):userOptions.concat("");
+        userOptions = payload.userSelections.soldStock == true ? userOptions.concat("stk").concat(","):userOptions.concat("");
+        userOptions = payload.userSelections.hasRetirementIncome == true ? userOptions.concat("ret").concat(","):userOptions.concat("");
+        userOptions = payload.userSelections.ownsRentalProperty == true ? userOptions.concat("ren").concat(","):userOptions.concat("");
+        userOptions = payload.userSelections.hasDonations == true ? userOptions.concat("dnt").concat(","):userOptions.concat("");
+        userOptions = payload.userSelections.hasStudentLoansOrTuition == true ? userOptions.concat("tui").concat(","):userOptions;
+        var refundTranfer="";
+        refundTranfer = payload.userSelections.payTaxPrepWithRefund == true ? refundTranfer.concat("rty"):refundTranfer.concat("rtn");
+        var omniValues="";
+        omniValues = userOptions +"|" + numberofStates + "|"+ refundTranfer+ "|"+ totoalPrice;
+
+
+        /*DTM Implementation - Begin*/
+        var dtmRuleToCall="tool_event";
+        try {
+
+            HRBData.digital_data.tool_client_id ="hrb";
+            HRBData.digital_data.tool_name ="seg2";
+            HRBData.digital_data.tool_language ="en";
+            HRBData.digital_data.tool_event ="tpg_screener_complete";
+            HRBData.digital_data.tool_step ="";
+            HRBData.digital_data.tool_use_summary = omniValues;
+            _satellite.track(dtmRuleToCall);
+
+        }catch(e){
+            console.log("Error: DTM call '"+ dtmRuleToCall +"' failed : "  +e);
+        }
+        /*DTM Implementation - End*/
+
+    };
+
+    // sending data to myblock
+    $scope.saveResultsMyblock = function(){
+        var factoryData = TaxProGoFactory.getData();
+        var data = {};
+        data.recordInfo = {
+            "type": "segment 2",
+            "recordVersion": "2",
+            "source": "www.hrblock.com"
+        };
+
+        data.userSelections = {};
+        // determinig complexity level -- default is 1
+        var _max_cert_level = 1;
+        for(var key in factoryData.udata.userSelections){
+            data.userSelections[key] = factoryData.udata.userSelections[key].value;
+            _max_cert_level = factoryData.udata.userSelections[key].level > _max_cert_level ? factoryData.udata.userSelections[key].level : _max_cert_level;
+        }
+
+        data.numberOfStates = factoryData.udata.statesselected.length;
+        data.stateInformation = [];
+
+        for ( i in factoryData.udata.statesselected){
+            var state_id = factoryData.udata.statesselected[i].id
+            data.stateInformation.push({"stateName" : state_id});
+        };
+
+        data.taxProInfo =  {
+            "taxProId": $scope.taxRequestDetails.amEmployeeId,
+            "taxProPSID":$scope.taxRequestDetails.preparerId
+        }
+
+        data.taxPrepInfo =  {
+            "priceQuoteId": $scope.taxRequestDetails.priceQuoteId,
+            "priceFederal": $scope.taxRequestDetails.federalPrice,
+            "pricePerState": $scope.taxRequestDetails.statePrice,
+            "priceTotal": $scope.taxRequestDetails.totalPrice
+        }
+
+
+        var payload = data;
+        console.log("myblock data", JSON.stringify(payload));
+        //saving selected values to DTM
+        $scope.omniresults(payload);
+        //sending data to myblock
+        HRBAPP.seg2.client.saveResults($http, payload);
+    }
+    $scope.getTaxRequestDetails = function(){
+        $scope.selectStep("c");
+        var data = {};
+        data.userSelections = {};
+        var _max_cert_level = 1;
+        for(var key in $scope.udata.userSelections){
+            data.userSelections[key] = $scope.udata.userSelections[key].value;
+            if($scope.udata.userSelections[key].value == true){
+                _max_cert_level = $scope.udata.userSelections[key].level > _max_cert_level ? $scope.udata.userSelections[key].level : _max_cert_level;
+            }
+        }
+        data.userSelections.certLevel = _max_cert_level;
+        // Determining priceGroup value before calling CBS
+        data.userSelections.priceGroup = setTpgGroup('tpgGroup');
+        // if browser doesn't support cookies/localstorage generate the priceGroup val randomly
+        if(!(data.userSelections.priceGroup) || !(data.userSelections.priceGroup === "A" || data.userSelections.priceGroup === "B")) {
+            data.userSelections.priceGroup = (Math.random()) < 0.5 ? "A" : "B";
+        }
+        data.userSelections.otpPartnerId = parseInt(g_partner_id);
+        data.userSelections.stateCodes = [];
+        data.userSelections.stateCount = $scope.udata.statesselected.length;
+        for ( i in $scope.udata.statesselected){
+            data.userSelections.stateCodes.push($scope.udata.statesselected[i].id);
+        };
+
+        var dtmRuleToCall="tool_step";
+        var payload = data.userSelections;
+        $http({
+            url: '/gateway/services/seg2/price',
+            method: 'POST',
+            data: payload,
+            contentType: "application/json",
+            headers: {
+                'appid': 'SEG2',
+                'client': 'hrb'
+            }
+        }).success(function (data) {
+            var d = data;
+
+            // If CBS, TCX, AM calls are success
+            if(((d.response.preparerId !== null) && (d.response.amEmployeeId !== null))&& (d.response.priceQuoteId !== null) && ((d.response.firstName !== "") && (d.response.firstName !== null)) ){
+                try {
+                    HRBData.digital_data.tool_name= "seg2";
+                    HRBData.digital_data.tool_step = "results";
+                    HRBData.digital_data.tool_event= "";
+                    HRBData.digital_data.tool_lang = "en";
+                    HRBData.digital_data.tool_client_id = "hrb";
+                    console.log("Omniture for Seg2 on results");
+
+                    _satellite.track(dtmRuleToCall);
+
+                }catch(e){
+                    console.log("Error: DTM call '"+ dtmRuleToCall +"' failed : "  +e);
+                }
+                $scope.taxRequestDetails = d.response;
+                $scope.save();
+
+                $timeout(function(){
+                    $scope.$apply(function(){
+                        $scope.selectStep("d");
+                        $state.go('tpg-result');
+                    });
+                }, 2000);
+
+
+                return  d.response;
+            }
+            // populate static values if one of the service call return null values
+            else {
+                // if TCX returns no TaxProID
+                if (d.response.preparerId == null || d.response.amEmployeeId == null || d.response.preparerId == "" || d.response.amEmployeeId == "") {
+                    d.response.firstName = "Diane";
+                    d.response.lastName = "Phelan";
+                    d.response.displayFirstName = "DIANE";
+                    d.response.displayLastName = "PHELAN";
+                    d.response.yearsOfExp = "18";
+                    d.response.photoUrl = "https://taxprofinder.hrblock.com/taxproimages/36463/69193_thumbnail.jpg ";
+                    d.response.certDetails = ["Enrolled Agent (EA)", "AFSP"];
+                    d.response.expertiseDetails = [
+                        {
+                            "expertiseName": "Investments/Stock Options  (income, sales, losses)",
+                            "expertiseRating": 5,
+                            "expertiseId": 1
+                        },
+                        {
+                            "expertiseName": "Home ownership, purchase, or sale",
+                            "expertiseRating": 4,
+                            "expertiseId": 2
+                        },
+                        {
+                            "expertiseName": "Home foreclosure",
+                            "expertiseRating": 6,
+                            "expertiseId": 3
+                        },
+                        {
+                            "expertiseName": "Real estate rentals or vacation homes",
+                            "expertiseRating": 6,
+                            "expertiseId": 4
+                        },
+                        {
+                            "expertiseName": "Healthcare expenses (e.g., medical, dental)",
+                            "expertiseRating": 3,
+                            "expertiseId": 5
+                        },
+                        {
+                            "expertiseName": "Charitable giving",
+                            "expertiseRating": 3,
+                            "expertiseId": 6
+                        },
+                        {
+                            "expertiseName": "Non-U.S. citizen (living in USA)",
+                            "expertiseRating": 8,
+                            "expertiseId": 8
+                        },
+                        {
+                            "expertiseName": "ITIN (Individual Taxpayer Identification Number) application",
+                            "expertiseRating": 3,
+                            "expertiseId": 9
+                        },
+                        {
+                            "expertiseName": "Retirement income",
+                            "expertiseRating": 3,
+                            "expertiseId": 11
+                        },
+                        {
+                            "expertiseName": "Income from multiple States",
+                            "expertiseRating": 4,
+                            "expertiseId": 12
+                        },
+                        {
+                            "expertiseName": "Military",
+                            "expertiseRating": 4,
+                            "expertiseId": 14
+                        },
+                        {
+                            "expertiseName": "Clergy",
+                            "expertiseRating": 4,
+                            "expertiseId": 15
+                        },
+                        {
+                            "expertiseName": "Small Business, Sole Proprietor, or Self-employed",
+                            "expertiseRating": 4,
+                            "expertiseId": 16
+                        },
+                        {
+                            "expertiseName": "Partnerships",
+                            "expertiseRating": 8,
+                            "expertiseId": 18
+                        },
+                        {
+                            "expertiseName": "Tax Audit & Notice Services",
+                            "expertiseRating": 8,
+                            "expertiseId": 21
+                        },
+                        {
+                            "expertiseName": "Tax Planning",
+                            "expertiseRating": 6,
+                            "expertiseId": 22
+                        }
+                    ]
+                    d.response.preparerId = "AAAAFFhH8h7GQ-yi1BJwmemPrmRTo8UIqr3cHg==";
+                    d.response.amEmployeeId = "69193";
+                    $scope.taxRequestDetails = d.response;
+                    $scope.save();
+                    try {
+                        HRBData.digital_data.tool_name= "seg2";
+                        HRBData.digital_data.tool_step = "results";
+                        HRBData.digital_data.tool_event= "";
+                        HRBData.digital_data.tool_lang = "en";
+                        HRBData.digital_data.tool_client_id = "hrb";
+                        console.log("Omniture for Seg2 on results");
+                        _satellite.track(dtmRuleToCall);
+
+                        HRBData.digital_data.error_id="RE|tpg|001";
+                        HRBData.digital_data.error_severity="1";
+                        HRBData.digital_data.error_description="problem with tcx call";
+                        _satellite.track('record_error');
+                    }catch(e){
+                        console.log("Error: DTM call '"+ dtmRuleToCall +"' failed : "  +e);
+                        console.log("Error: DTM call reporting error failed : "  +e);
+                    }
+                }
+                // If CBS call returns null values
+                if (d.response.priceQuoteId == null || d.response.priceQuoteId == "") {
+                    d.response.federalPrice = "79.0";
+                    d.response.federalSKU = "SEG2_FDTaxPrep";
+                    d.response.federalCount = "1";
+                    d.response.statePrice = "49.0";
+                    d.response.stateSKU = "SEG2_STTaxPrep";
+                    d.response.stateCount = String($scope.udata.statesselected.length);
+                    d.response.totalPrice = String((79 + (($scope.udata.statesselected.length - 1) * 49)));
+                    d.response.refundTransferFee = "34.95";
+                    d.response.priceQuoteId = "000000000000000000000000000000000000";
+                    $scope.taxRequestDetails = d.response;
+                    $scope.save();
+                    try {
+                        HRBData.digital_data.tool_name = "seg2";
+                        HRBData.digital_data.tool_step = "results";
+                        HRBData.digital_data.tool_event = "";
+                        HRBData.digital_data.tool_lang = "en";
+                        HRBData.digital_data.tool_client_id = "hrb";
+                        console.log("Omniture for Seg2 on results");
+                        _satellite.track(dtmRuleToCall);
+
+                        HRBData.digital_data.error_id="RE|tpg|003";
+                        HRBData.digital_data.error_severity="1";
+                        HRBData.digital_data.error_description="problem with cbs call";
+                        _satellite.track('record_error');
+
+                    }
+                    catch(e) {
+                        console.log("Error: DTM call reporting error failed : "  +e);
+                    }
+                }
+                // If TCX returns a terminated taxpro
+                if (d.response.firstName == "" || d.response.firstName === null ) {
+                    var taxProId = d.response.amEmployeeId;
+                    d.response.firstName = "Diane";
+                    d.response.lastName = "Phelan";
+                    d.response.displayFirstName = "DIANE";
+                    d.response.displayLastName = "PHELAN";
+                    d.response.yearsOfExp = "18";
+                    d.response.photoUrl = "https://taxprofinder.hrblock.com/taxproimages/36463/69193_thumbnail.jpg ";
+                    d.response.certDetails = ["Enrolled Agent (EA)", "AFSP"];
+                    d.response.expertiseDetails = [
+                        {
+                            "expertiseName": "Investments/Stock Options  (income, sales, losses)",
+                            "expertiseRating": 5,
+                            "expertiseId": 1
+                        },
+                        {
+                            "expertiseName": "Home ownership, purchase, or sale",
+                            "expertiseRating": 4,
+                            "expertiseId": 2
+                        },
+                        {
+                            "expertiseName": "Home foreclosure",
+                            "expertiseRating": 6,
+                            "expertiseId": 3
+                        },
+                        {
+                            "expertiseName": "Real estate rentals or vacation homes",
+                            "expertiseRating": 6,
+                            "expertiseId": 4
+                        },
+                        {
+                            "expertiseName": "Healthcare expenses (e.g., medical, dental)",
+                            "expertiseRating": 3,
+                            "expertiseId": 5
+                        },
+                        {
+                            "expertiseName": "Charitable giving",
+                            "expertiseRating": 3,
+                            "expertiseId": 6
+                        },
+                        {
+                            "expertiseName": "Non-U.S. citizen (living in USA)",
+                            "expertiseRating": 8,
+                            "expertiseId": 8
+                        },
+                        {
+                            "expertiseName": "ITIN (Individual Taxpayer Identification Number) application",
+                            "expertiseRating": 3,
+                            "expertiseId": 9
+                        },
+                        {
+                            "expertiseName": "Retirement income",
+                            "expertiseRating": 3,
+                            "expertiseId": 11
+                        },
+                        {
+                            "expertiseName": "Income from multiple States",
+                            "expertiseRating": 4,
+                            "expertiseId": 12
+                        },
+                        {
+                            "expertiseName": "Military",
+                            "expertiseRating": 4,
+                            "expertiseId": 14
+                        },
+                        {
+                            "expertiseName": "Clergy",
+                            "expertiseRating": 4,
+                            "expertiseId": 15
+                        },
+                        {
+                            "expertiseName": "Small Business, Sole Proprietor, or Self-employed",
+                            "expertiseRating": 4,
+                            "expertiseId": 16
+                        },
+                        {
+                            "expertiseName": "Partnerships",
+                            "expertiseRating": 8,
+                            "expertiseId": 18
+                        },
+                        {
+                            "expertiseName": "Tax Audit & Notice Services",
+                            "expertiseRating": 8,
+                            "expertiseId": 21
+                        },
+                        {
+                            "expertiseName": "Tax Planning",
+                            "expertiseRating": 6,
+                            "expertiseId": 22
+                        }
+                    ]
+                    d.response.preparerId = "AAAAFFhH8h7GQ-yi1BJwmemPrmRTo8UIqr3cHg==";
+                    d.response.amEmployeeId = "69193";
+                    $scope.taxRequestDetails = d.response;
+                    $scope.save();
+                    try {
+                        HRBData.digital_data.tool_name = "seg2";
+                        HRBData.digital_data.tool_step = "results";
+                        HRBData.digital_data.tool_event = "";
+                        HRBData.digital_data.tool_lang = "en";
+                        HRBData.digital_data.tool_client_id = "hrb";
+                        console.log("Omniture for Seg2 on results");
+                        _satellite.track(dtmRuleToCall);
+
+                        HRBData.digital_data.error_id = "RE|tpg|002";
+                        HRBData.digital_data.error_severity = "1";
+                        HRBData.digital_data.error_description = "problem with tp details call for id " + taxProId;
+                        _satellite.track('record_error');
+                    }
+                    catch(e) {
+                        console.log("Error: DTM call '"+ dtmRuleToCall +"' failed : "  +e);
+                        console.log("Error: DTM call reporting error failed : "  +e);
+                    }
+                }
+
+                $timeout(function(){
+                    $scope.$apply(function(){
+                        $scope.selectStep("d");
+                        $state.go('tpg-result');
+                    });
+                }, 2000);
+                return d.response;
+            }
+        }).error(function(){
+            HRBData.digital_data.error_id="RE|tpg|004";
+            HRBData.digital_data.error_severity="1";
+            HRBData.digital_data.error_description="err:"+ ".COM Service is unavailable";
+            console.log("err:"+ "Service is unavailable right now");
+            _satellite.track('record_error');
+            $state.go('tpg-error');
+        });
+    };
+
+       $scope.$watch("[temp.paginate.currentIndex]", function(){
+        var _range = $scope.temp.paginate.range,
+            _c_index = $scope.temp.paginate.currentIndex,
+            _total = $scope.temp.paginate.total;
+
+        $scope.temp.paginate.left = (_c_index < 1) ? false : true;
+        $scope.temp.paginate.right = ((_c_index + _range + 1) > _total) ? false : true;
+
+        $timeout(function(){
+            $scope.navigateItems();
+        }, 100);
+
+        return false;
+    }, true);
+
+    $scope.$watch("[nav.step.b.currentMenu, udata.statesselected]", function(){
+        var _status = false;
+        if($scope.nav.step.b.currentMenu == "states" && !($scope.udata.statesselected.length > 0)){
+            _status = true;
+        }
+        $scope.nav.step.b.nextDisabled = _status;
+    }, true);
+
+    $scope.handleMobileMenu = function(){
+        if($(window).width() < 656 ){
+            $scope.temp.mobileMenuExpanded = !$scope.temp.mobileMenuExpanded;
+        }
+    }
+
+    $scope.stateListFilter = function(state){
+        if(!($scope.udata.statesselected.indexOf(state) > -1)){
+            return true;
+        }
+        return false;
+    }
+
+    $scope.startWith = function (actual, expected) {
+        var lowerStr = (actual + "").toLowerCase();
+        return lowerStr.indexOf(expected.toLowerCase()) === 0;
+    }
+
+    $scope.updateState = function(_state){
+        if($scope.udata.statesselected.indexOf(_state) == -1){
+            $scope.udata.statesselected.push(_state);
+            $scope.temp.stateSearchInput = "";
+
+        }
+        // $scope.temp.stateSearchInput = "";
+        $('#statelist-filter-input').focus();
+        $scope.save();
+    }
+
+    $scope.flipCard = function(_ev, _case){
+        switch(_case){
+            case "taxproinfo":
+                var _container = $('.tax-pro-info-wrapper');
+                break;
+            case "stateprice":
+                var _container = $('.tax-pro-fee-card-wrapper');
+                $('.tax-pro-state-price-card', _container).toggleClass('ng-hide');
+                break;
+            case "disclaimer":
+                var _container = $('.tax-pro-fee-card-wrapper');
+                $('.tax-pro-disclaimer-card', _container).toggleClass('ng-hide');
+                break;
+        }
+        _container.toggleClass('flip-active');
+    }
+
+    $scope.selectStep = function(_step){
+        _step = _step.toLowerCase();
+        if(_step == "c"){
+            $scope.fireDTMStepCall(_step);
+        }
+        angular.forEach($scope.nav.step, function(value, key) {
+            $scope.nav.step[key].show = false;
+
+        });
+        if($(window).width() < 768 ){
+            $scope.temp.mobileMenuExpanded = false;
+        }
+        $scope.nav.step[_step].show = true;
+        if($scope.nav.step.c.show ){
+            $('#angular-app-start').hide();
+        }
+        else {
+            $('#angular-app-start').hide();
+        }
+        return _step;
+    }
+
+    $scope.save = function(what) {
+
+        switch (what) {
+            case "taxpro":
+                TaxProGoFactory.updateTaxPro($scope.taxRequestDetails);
+                break;
+            default:
+                TaxProGoFactory.setData($scope);
+                break;
+        }
+    }
+    $scope.resetForm = function(){
+        $state.go('tpg-selections',{},{reload:'tpg-selections'});
+        $('#angular-app-start').show();
+        $scope.udata.uo = [];
+        $scope.temp.stateSearchInput = "";
+        if($('#tpg-view').hasClass('hiddenTrue')) {
+            console.log("On Entry Screen");
+        }
+        else {
+            $scope.fireDTMStepCall("lifestyle");
+        }
+        $scope.udata = {};
+        $scope.udata.userSelections = {};
+        $scope.nav = {
+            step : {
+                b : {
+                    show:true,
+                    currentMenu:"lifestyle",
+                    nextMenu:"employment",
+                    previousMenu: false,
+                    nextDisabled: false,
+                    menuList: ["lifestyle", "employment", "income", "deductions", "states"],
+                    menu : {
+                        lifestyle : {
+                            label: "Lifestyle",
+                            level: 1,
+                            tabindex: 1,
+                            show: true,
+                            status: false
+                        },
+                        employment : {
+                            label: "Employment",
+                            level: 2,
+                            tabindex: 3,
+                            show: false,
+                            status: false
+                        },
+                        income : {
+                            label: "Income",
+                            level: 3,
+                            show: false,
+                            status: false
+                        },
+                        deductions : {
+                            label: "Deductions",
+                            level: 4,
+                            show: false,
+                            status: false
+                        },
+                        states : {
+                            label: "States",
+                            level: 5,
+                            show: false,
+                            status: false
+                        }
+                    }
+                },
+                c : {
+                    show:false
+                },
+                d : {
+                    show:false
+                }
+            },
+        }
+
+        $scope.udata.userSelections.single = {
+            value : false,
+            level : 1
+        };
+        $scope.udata.userSelections.married = {
+            value : false,
+            level : 1
+        };
+        $scope.udata.userSelections.hasJob = {
+            value : false,
+            level : 1
+        };
+        $scope.udata.userSelections.hasDependents = {
+            value : false,
+            level : 1
+        };
+        $scope.udata.userSelections.ownsHome = {
+            value : false,
+            level : 2
+        };
+        $scope.udata.userSelections.isSelfEmployed = {
+            value : false,
+            level : 3
+        };
+        $scope.udata.userSelections.ownsBusiness = {
+            value : false,
+            level : 3
+        };
+        $scope.udata.userSelections.soldStock = {
+            value : false,
+            level : 3
+        };
+        $scope.udata.userSelections.hasDonations = {
+            value : false,
+            level : 2
+        };
+        $scope.udata.userSelections.hasStudentLoansOrTuition = {
+            value : false,
+            level : 2
+        };
+        $scope.udata.userSelections.ownsRentalProperty = {
+            value : false,
+            level : 4
+        };
+        $scope.udata.userSelections.hasRetirementIncome = {
+            value : false,
+            level : 3
+        };
+        $scope.udata.userSelections.payTaxPrepWithRefund = {
+            value : false,
+            level : 1
+        };
+        $scope.udata.uo = $scope.udata.userSelections;
+        $scope.udata.statesselected = [];
+        $scope.taxRequestDetails = {
+            "federalPrice": null,
+            "statePrice": null,
+            "totalPrice": null,
+            "refundPrice":null,
+            "priceQuoteId": null,
+            "firstName": null,
+            "lastName": null,
+            "displayFirstName": null,
+            "displayLastName": null,
+            "yearsOfExp": null,
+            "photoUrl": null,
+            "certDetails": null,
+            "expertiseDetails": null
+        };
+        $scope.save();
+    }
+
+    $scope.updateUserOptions = function(_ev, _el){
+        var t = _ev.target;
+        var m = $(t).attr('data-ng-model').split('.')[2];
+        if($(t).is(":checked")){
+            switch(m){
+                case "single":
+                    $scope.udata.uo.married.value = false;
+                    break;
+                case "married":
+                    $scope.udata.uo.single.value = false;
+                    break;
+            }
+            $scope.udata.uo[m].value = true;
+        }else{
+            $scope.udata.uo[m].value = false;
+        }
+
+        $scope.temp.paginate.total = $.map($scope.udata.uo, function(p){ return p.value ? true : null; }).length + 1;
+        $scope.temp.paginate.show = $scope.temp.paginate.total > $scope.temp.paginate.range ? true : false;
+        $scope.save();
+    }
+
+    $scope.showUserOptions = function(_option){
+        angular.forEach($scope.nav.step.b.menu, function (value, key) {
+            $scope.nav.step.b.menu[key].show = false;
+        });
+        if (!($scope.nav.step.b.menu[$scope.nav.step.b.currentMenu].show || $scope.nav.step.b.currentMenu == _option)) {
+            $scope.nav.step.b.menu[$scope.nav.step.b.currentMenu].status = true;
+        }
+        $scope.nav.step.b.menu[_option].show = true;
+        $scope.nav.step.b.currentMenu = _option;
+        $scope.fireDTMStepCall(_option);
+    }
+
+    $scope.nextStep = function(){
+        var _set = "";
+        switch($scope.nav.step.b.currentMenu){
+            case "lifestyle" :
+                _set = "employment";
+                break;
+            case "employment" :
+                _set = "income";
+                break;
+            case "income" :
+                _set = "deductions";
+                break;
+            case "deductions" :
+                _set = "states";
+                break;
+            case "states" :
+                $scope.getTaxRequestDetails();
+                return true;
+                break;
+        }
+
+        $scope.showUserOptions(_set);
+    }
+    $scope.preStep = function(){
+        var _set = "";
+        switch($scope.nav.step.b.currentMenu){
+            case "lifestyle" :
+                // $scope.selectStep("a");
+                return false;
+                break;
+            case "employment" :
+                _set = "lifestyle";
+                break;
+            case "income" :
+                _set = "employment";
+                break;
+            case "deductions" :
+                _set = "income";
+                break;
+            case "states" :
+                _set = "deductions";
+                break;
+        }
+        $scope.showUserOptions(_set);
+    }
+
+    $scope.fireDTMStepCall = function(option) {
+        var stepCall = option;
+        if((stepCall !== "c")) {
+            var dtmRuleToCall="tool_step";
+            try {
+                HRBData.digital_data.tool_name= "seg2";
+                HRBData.digital_data.tool_step = stepCall;
+                HRBData.digital_data.tool_event= "";
+                HRBData.digital_data.tool_lang = "en";
+                HRBData.digital_data.tool_client_id = "hrb";
+                console.log("Omniture for Seg2 on", stepCall);
+
+                _satellite.track(dtmRuleToCall);
+
+            }catch(e){
+                console.log("Error: DTM call '"+ dtmRuleToCall +"' failed : "  +e);
+            }
+        }
+        else if(stepCall == "c"){
+            var dtmRuleToCall="tool_step";
+            try {
+                HRBData.digital_data.tool_name= "seg2";
+                HRBData.digital_data.tool_step = "matching";
+                HRBData.digital_data.tool_event= "";
+                HRBData.digital_data.tool_lang = "en";
+                HRBData.digital_data.tool_client_id = "hrb";
+                console.log("Omniture for Seg2 on matching");
+                _satellite.track(dtmRuleToCall);
+
+            }catch(e){
+                console.log("Error: DTM call '"+ dtmRuleToCall +"' failed : "  +e);
+            }
+        }
+
+    };
+    $scope.navigateItems = function(o){
+
+        if(!$('form').hasClass('ng-scope')){
+            $timeout(function(){
+                $scope.navigateItems(o);
+            }, 200);
+            return false;
+        }
+
+        var _hide_class = "hide-option";
+        var _items = $('#tpg-views .selected-options li').not($(".ng-hide"));
+        _items.addClass(_hide_class);
+        if(o){
+            switch(o){
+                case "left":
+                    if(($scope.temp.paginate.currentIndex + $scope.temp.paginate.range - 1) <= $scope.temp.paginate.range){
+                        return false;
+                    }
+                    $scope.temp.paginate.currentIndex -= $scope.temp.paginate.range;
+                    break;
+                case "right":
+                    if(($scope.temp.paginate.currentIndex + $scope.temp.paginate.range) > ($scope.temp.paginate.total - 1)){
+                        return false;
+                    }
+                    $scope.temp.paginate.currentIndex += $scope.temp.paginate.range;
+                    break;
+            }
+        }
+
+        _items.each(function(i){
+            if(i < $scope.temp.paginate.currentIndex || i >= ($scope.temp.paginate.currentIndex + $scope.temp.paginate.range)){
+                $(this).addClass(_hide_class);
+            }else{
+                $(this).removeClass(_hide_class);
+            }
+        });
+    }
+
+});
+HRBAPP.seg2.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
+
+    $stateProvider
+    // HOME STATES AND NESTED VIEWS
+        .state('tpg-selections', {
+            url: '',
+            templateUrl: '/includes/app/tpg/partials/options-selector.html',
+            controller:'TaxProGoController'
+        }).state('tpg-result', {
+        url: '',
+        templateUrl: '/includes/app/tpg/partials/tpg-result.html',
+        controller: 'TaxProGoController'
+    }).state('tpg-error', {
+        url:'',
+        templateUrl: '/includes/app/tpg/partials/tpg-error.html',
+        controller: 'TaxProGoController'
+    });
+});
+
+HRBAPP.seg2.factory('TaxProGoDefaultData', function() {
+    var storeDefault = {};
+    storeDefault.temp = {};
+    storeDefault.temp = {
+        stateSearchInput : "",
+        mobileMenuExpanded : false,
+        paginate : {
+            show : false,
+            range : 5,
+            total : 0,
+            currentIndex : 0,
+            left : false,
+            right : true
+        }
+    };
+    storeDefault.udata = {};
+    storeDefault.udata.userSelections = {};
+    storeDefault.nav = {
+        step : {
+            b : {
+                show:true,
+                currentMenu:"lifestyle",
+                nextMenu:"employment",
+                previousMenu: false,
+                nextDisabled: false,
+                menuList: ["lifestyle", "employment", "income", "deductions", "states"],
+                menu : {
+                    lifestyle : {
+                        label: "Lifestyle",
+                        level: 1,
+                        show: true,
+                        status: false
+                    },
+                    employment : {
+                        label: "Employment",
+                        level: 2,
+                        show: false,
+                        status: false
+                    },
+                    income : {
+                        label: "Income",
+                        level: 3,
+                        show: false,
+                        status: false
+                    },
+                    deductions : {
+                        label: "Deductions",
+                        level: 4,
+                        show: false,
+                        status: false
+                    },
+                    states : {
+                        label: "States",
+                        level: 5,
+                        show: false,
+                        status: false
+                    }
+                }
+            },
+            c : {
+                show:false
+            },
+            d : {
+                show:false
+            }
+        },
+    }
+
+    storeDefault.udata.userSelections.single = {
+        value : false,
+        level : 1
+    };
+    storeDefault.udata.userSelections.married = {
+        value : false,
+        level : 1
+    };
+    storeDefault.udata.userSelections.hasJob = {
+        value : false,
+        level : 1
+    };
+    storeDefault.udata.userSelections.hasDependents = {
+        value : false,
+        level : 1
+    };
+    storeDefault.udata.userSelections.ownsHome = {
+        value : false,
+        level : 2
+    };
+    storeDefault.udata.userSelections.isSelfEmployed = {
+        value : false,
+        level : 3
+    };
+    storeDefault.udata.userSelections.ownsBusiness = {
+        value : false,
+        level : 3
+    };
+    storeDefault.udata.userSelections.soldStock = {
+        value : false,
+        level : 3
+    };
+    storeDefault.udata.userSelections.hasDonations = {
+        value : false,
+        level : 2
+    };
+    storeDefault.udata.userSelections.hasStudentLoansOrTuition = {
+        value : false,
+        level : 2
+    };
+    storeDefault.udata.userSelections.ownsRentalProperty = {
+        value : false,
+        level : 4
+    };
+    storeDefault.udata.userSelections.hasRetirementIncome = {
+        value : false,
+        level : 3
+    };
+    storeDefault.udata.userSelections.payTaxPrepWithRefund = {
+        value : false,
+        level : 1
+    };
+    storeDefault.udata.statesselected = [];
+    storeDefault.expertiseDescription = {
+        "1" : {
+            icon : "tp-icon investments-tp-icon",
+            label: "Investments"
+        },
+        "4" : {
+            icon : "tp-icon realestate-tp-icon",
+            label: "Real Estate"
+        },
+        "9" : {
+            icon : "tp-icon itin-tp-icon",
+            label: "ITIN"
+        },
+        "10" : {
+            icon : "tp-icon globe-tp-icon",
+            label: "Foreign Income"
+        },
+        "11" : {
+            icon : "tp-icon retirement-tp-icon",
+            label: "Retirement"
+        },
+        "12" : {
+            icon : "tp-icon multi-state-tp-icon ",
+            label: "Multi State Income"
+        },
+        "13" : {
+            icon : "tp-icon farming-tp-icon",
+            label: "Farming"
+        },
+        "14" : {
+            icon : "tp-icon military-tp-icon",
+            label: "Military"
+        },
+        "15" : {
+            icon : "tp-icon clergy-tp-icon",
+            label: "Clergy"
+        },
+        "16" : {
+            icon : "tp-icon smallbusiness-tp-icon",
+            label: "Small Business"
+        },
+        "22" : {
+            icon : "tp-icon taxplanning-tp-icon",
+            label: "Tax Planning"
+        },
+        "18" : {
+            icon : "tp-icon partnership-tp-icon",
+            label: "PartnerShip"
+        },
+        "19" : {
+            icon : "tp-icon corporations-tp-icon",
+            label: "Corporations"
+        },
+        "20" : {
+            icon : "tp-icon charitable-tp-icon",
+            label: "Charitable"
+        },
+        "21" : {
+            icon : "tp-icon stateaudits-tp-icon",
+            label: "IRS/Audits"
+        }
+    };
+
+    storeDefault.stateNameLists = [
+        { id: 'AL', value: 'Alabama' },
+        { id: 'AK', value: 'Alaska' },
+        { id: 'AZ', value: 'Arizona' },
+        { id: 'AR', value: 'Arkansas' },
+        { id: 'CA', value: 'California' },
+        { id: 'CO', value: 'Colorado' },
+        { id: 'CT', value: 'Connecticut' },
+        { id: 'DE', value: 'Delaware' },
+        { id: 'DC', value: 'District of Columbia' },
+        { id: 'FL', value: 'Florida' },
+        { id: 'GA', value: 'Georgia' },
+        { id: 'HI', value: 'Hawaii' },
+        { id: 'ID', value: 'Idaho' },
+        { id: 'IL', value: 'Illinois' },
+        { id: 'IN', value: 'Indiana' },
+        { id: 'IA', value: 'Iowa' },
+        { id: 'KS', value: 'Kansas' },
+        { id: 'KY', value: 'Kentucky' },
+        { id: 'LA', value: 'Louisiana' },
+        { id: 'ME', value: 'Maine' },
+        { id: 'MD', value: 'Maryland' },
+        { id: 'MA', value: 'Massachusetts' },
+        { id: 'MI', value: 'Michigan' },
+        { id: 'MN', value: 'Minnesota' },
+        { id: 'MS', value: 'Mississippi' },
+        { id: 'MO', value: 'Missouri' },
+        { id: 'MT', value: 'Montana' },
+        { id: 'NE', value: 'Nebraska' },
+        { id: 'NV', value: 'Nevada' },
+        { id: 'NH', value: 'New Hampshire' },
+        { id: 'NJ', value: 'New Jersey' },
+        { id: 'NM', value: 'New Mexico' },
+        { id: 'NY', value: 'New York' },
+        { id: 'NC', value: 'North Carolina' },
+        { id: 'ND', value: 'North Dakota' },
+        { id: 'OH', value: 'Ohio' },
+        { id: 'OK', value: 'Oklahoma' },
+        { id: 'OR', value: 'Oregon' },
+        { id: 'PA', value: 'Pennsylvania' },
+        { id: 'RI', value: 'Rhode Island' },
+        { id: 'SC', value: 'South Carolina' },
+        { id: 'SD', value: 'South Dakota' },
+        { id: 'TN', value: 'Tennessee' },
+        { id: 'TX', value: 'Texas' },
+        { id: 'UT', value: 'Utah' },
+        { id: 'VT', value: 'Vermont' },
+        { id: 'VA', value: 'Virginia' },
+        { id: 'WA', value: 'Washington' },
+        { id: 'WV', value: 'West Virginia' },
+        { id: 'WI', value: 'Wisconsin' },
+        { id: 'WY', value: 'Wyoming' }
+    ];
+
+    storeDefault.taxRequestDetails = {
+        "federalPrice": null,
+        "statePrice": null,
+        "totalPrice": null,
+        "refundPrice":null,
+        "priceQuoteId": null,
+        "firstName": null,
+        "lastName": null,
+        "displayFirstName": null,
+        "displayLastName": null,
+        "yearsOfExp": null,
+        "photoUrl": null,
+        "certDetails": null,
+        "expertiseDetails": null
+    }
+
+    return storeDefault;
+
+});
+HRBAPP.seg2.factory('TaxProGoFactory', function(TaxProGoDefaultData,$location) {
+
+    var _clone = TaxProGoDefaultData;
+    var initialData = angular.copy(_clone);
+    return {
+        getData: function () {
+            return _clone;
+        },
+        setData: function (new_d) {
+            _clone.temp = new_d.temp;
+            _clone.nav = new_d.nav;
+            _clone.udata = new_d.udata;
+            _clone.stateNameLists = new_d.stateNameLists;
+            _clone.taxRequestDetails = new_d.taxRequestDetails;
+        },
+        updateTaxPro: function (new_d) {
+            _clone.taxRequestDetails = new_d;
+        },
+        resetData: function () {
+            _clone = initialData;
+        }
+    };
+});
+
+HRBAPP.seg2.client = {};
+HRBAPP.seg2.client.appid = "hrb";  // hrb or mb or ea
+HRBAPP.seg2.client.saveButtonText = {"en":"Save My Results"};
+HRBAPP.seg2.client.saveButtonEnabled = true;
+HRBAPP.seg2.client.automaticallyExpandResults = false;
+HRBAPP.seg2.client.sourceDomain	= "";// blank if consumer is hrblock.com
+HRBAPP.seg2.client.env = {
+    "myblock" : { "saveResultsUrl": "","openInNewWindow": false,"blockDataId":""}
+};
+
+
+// Getting current environment
+
+HRBAPP.seg2.client.setMyBlockSaveResultsURL = function() {
+    var host = document.location.hostname;
+    if ( (host.indexOf("hrbcomdev")!=-1)) { //in DEV environment
+        HRBAPP.seg2.client.env.myblock.saveResultsUrl		= "https://myaccountdevint.hrblock.net/mytax/?origin=hrblock.seg2.saveresults";
+    } else if ( (host.indexOf("hrbcomqa")!=-1)) { //in QA environment
+        HRBAPP.seg2.client.env.myblock.saveResultsUrl		= "https://myaccountqa.hrblock.net/mytax/?origin=hrblock.seg2.saveresults";
+    } else if ( (host.indexOf("scaletest")!=-1)) { //in STAGING environment
+        HRBAPP.seg2.client.env.myblock.saveResultsUrl		= "https://lnpmyaccount.hrblock.net/mytax/?origin=hrblock.seg2.saveresults";
+    } else { //in PROD environment
+        HRBAPP.seg2.client.env.myblock.saveResultsUrl		= "https://myaccount.hrblock.com/mytax/?origin=hrblock.seg2.saveresults";
+    }
+}
+HRBAPP.seg2.client.saveResults = function($http, payload){
+    $http({
+        url: '/myaccount/services/widget/seg2',
+        method: "POST",
+        data: payload,
+        contentType: "application/json",
+        headers: {
+            'appid': 'SEG2',
+            'client': 'hrb'
+        }
+    }).success(function (data) {
+        HRBAPP.seg2.client.env.myblock.blockDataId = data.blockDataId;
+        HRBAPP.seg2.client.setMyBlockSaveResultsURL();
+        var saveUrl = HRBAPP.seg2.client.env.myblock.saveResultsUrl + "&guid=" + HRBAPP.seg2.client.env.myblock.blockDataId + '&userType=seg2';
+        if(data.blockDataId) {
+            window.top.location = saveUrl;
+        }
+    });
+}

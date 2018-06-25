@@ -1,0 +1,41 @@
+{
+   "checksum": "1083b6f58bc57d2d12476d81e27ce997",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13173810731653511",
+            "id": "5",
+            "meta_info": {
+               "last_visited_desktop": "13173810731655100"
+            },
+            "name": "Canvas",
+            "sync_transaction_version": "6",
+            "type": "url",
+            "url": "https://my.kenzie.academy/"
+         } ],
+         "date_added": "13173810337370246",
+         "date_modified": "13173810731653511",
+         "id": "1",
+         "name": "Bookmarks Bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13173810337370254",
+         "date_modified": "0",
+         "id": "2",
+         "name": "Other Bookmarks",
+         "type": "folder"
+      },
+      "sync_transaction_version": "6",
+      "synced": {
+         "children": [  ],
+         "date_added": "13173810337370255",
+         "date_modified": "0",
+         "id": "3",
+         "name": "Mobile Bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

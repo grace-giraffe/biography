@@ -1,0 +1,10 @@
+[2018-06-18 11:46:46.685] [exthost3] [info] extension host started
+[2018-06-18 11:46:46.713] [exthost3] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2018-06-18 11:46:46.713] [exthost3] [info] ExtensionService#loadCommonJSModule /private/var/folders/x_/vdt6428d6cj852j3gycm176m0000gn/T/AppTranslocation/0FC5ED97-6206-4486-99F4-80BA08214C23/d/Visual Studio Code.app/Contents/Resources/app/extensions/emmet/out/extension
+[2018-06-18 11:46:46.773] [exthost3] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2018-06-18 11:46:46.773] [exthost3] [info] ExtensionService#loadCommonJSModule /private/var/folders/x_/vdt6428d6cj852j3gycm176m0000gn/T/AppTranslocation/0FC5ED97-6206-4486-99F4-80BA08214C23/d/Visual Studio Code.app/Contents/Resources/app/extensions/git/out/main
+[2018-06-18 11:46:46.931] [exthost3] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2018-06-18 11:46:46.931] [exthost3] [info] ExtensionService#loadCommonJSModule /private/var/folders/x_/vdt6428d6cj852j3gycm176m0000gn/T/AppTranslocation/0FC5ED97-6206-4486-99F4-80BA08214C23/d/Visual Studio Code.app/Contents/Resources/app/extensions/merge-conflict/out/extension
+[2018-06-18 11:46:46.942] [exthost3] [info] ExtensionService#_doActivateExtension vscode.search-rg {"startup":true,"activationEvent":"*"}
+[2018-06-18 11:46:46.942] [exthost3] [info] ExtensionService#loadCommonJSModule /private/var/folders/x_/vdt6428d6cj852j3gycm176m0000gn/T/AppTranslocation/0FC5ED97-6206-4486-99F4-80BA08214C23/d/Visual Studio Code.app/Contents/Resources/app/extensions/search-rg/out/extension
+[2018-06-18 11:46:46.950] [exthost3] [info] eager extensions activated
